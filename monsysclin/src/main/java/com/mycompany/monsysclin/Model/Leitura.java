@@ -10,32 +10,54 @@ package com.mycompany.monsysclin.Model;
  * @author gabsg
  */
 public class Leitura {
-    
-    private Integer idLeitura;
-    private String cpuLeitura, bytesRcv, bytesSnd;
 
-    public Leitura(Integer idLeitura, String cpuLeitura, String bytesRcv, String bytesSnd) {
+    private Integer idLeitura, fkMaquina;
+    private String cpuLeitura, memoriaLeitura, bytesRecebidos, bytesEnviados, disco, datahoraLeitura;
+
+    public Leitura(Integer idLeitura, Integer fkMaquina, String cpuLeitura, String memoriaLeitura, String bytesRecebidos, String bytesEnviados, String disco, String datahoraLeitura) {
         this.idLeitura = idLeitura;
+        this.fkMaquina = fkMaquina;
         this.cpuLeitura = cpuLeitura;
-        this.bytesRcv = bytesRcv;
-        this.bytesSnd = bytesSnd;
+        this.memoriaLeitura = memoriaLeitura;
+        this.bytesRecebidos = bytesRecebidos;
+        this.bytesEnviados = bytesEnviados;
+        this.disco = disco;
+        this.datahoraLeitura = datahoraLeitura;
     }
 
     public Integer getIdLeitura() {
         return idLeitura;
     }
 
+    public Integer getFkMaquina() {
+        return fkMaquina;
+    }
+
     public String getCpuLeitura() {
         return cpuLeitura;
     }
 
-    public String getBytesRcv() {
-        return bytesRcv;
+    public String getMemoriaLeitura() {
+        return memoriaLeitura;
     }
 
-    public String getBytesSnd() {
-        return bytesSnd;
+    public String getBytesRecebidos() {
+        return bytesRecebidos;
     }
+
+    public String getBytesEnviados() {
+        return bytesEnviados;
+    }
+
+    public String getDisco() {
+        return disco;
+    }
+
+    public String getDatahoraLeitura() {
+        return datahoraLeitura;
+    }
+
     
+
     
 }

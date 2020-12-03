@@ -5,6 +5,7 @@
  */
 package com.mycompany.monsysclin.View;
 
+import com.mycompany.monsysclin.Controller.Inserts;
 import com.mycompany.monsysclin.Model.Usuario;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -30,7 +31,6 @@ public class Login extends javax.swing.JFrame {
     private String senhaValida;
 
     public String valida() {
-        String userValido = "";
         emailUser = jTextField1.getText();
         senhaUser = jPasswordField1.getText();
         try {
@@ -51,8 +51,6 @@ public class Login extends javax.swing.JFrame {
             Usuario user;
             while (rs.next()) {
                 user = new Usuario(rs.getInt("idUsuario"), rs.getInt("tipo_usuario"), rs.getString("nomeUsuario"), rs.getString("emailUsuario"), rs.getString("senhaUsuario"));
-                // userValido = rs.getString(1);
-                userValido = user.toString();
                 userValido1 = rs.getString(3);
                 senhaValida = rs.getString(4);
             }
@@ -68,6 +66,10 @@ public class Login extends javax.swing.JFrame {
         valida();
         if (userValido1.equals(emailUser) && senhaValida.equals(senhaUser)) {
             JOptionPane.showMessageDialog(null, "Credenciais corretas");
+
+            Inserts inserts = new Inserts();
+            inserts.insereDados();
+
             new Leituras().setVisible(true);
             this.dispose();
         } else {
@@ -93,6 +95,7 @@ public class Login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
+        setUndecorated(true);
         setResizable(false);
 
         jButton1.setText("Logar");
@@ -153,7 +156,8 @@ public class Login extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        pack();
+        setSize(new java.awt.Dimension(450, 300));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

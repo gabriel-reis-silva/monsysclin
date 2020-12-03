@@ -5,7 +5,7 @@
  */
 package com.mycompany.monsysclin.View;
 
-import com.mycompany.monsysclin.Controller.Connection;
+import com.mycompany.monsysclin.Controller.Conexao;
 import static java.lang.Thread.sleep;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -50,7 +50,7 @@ public class SplashScreen extends javax.swing.JFrame {
                     }
                     //comando para após "carregar" abrir a próxima tela
                     try {
-                        Connection conexao = new Connection();
+                        Conexao conexao = new Conexao();
                         new Login().setVisible(true);
                         conexao.getDatasource();
                     } catch (Exception e) {
@@ -91,7 +91,7 @@ public class SplashScreen extends javax.swing.JFrame {
         jPanel1.add(jProgressBar1);
         jProgressBar1.setBounds(50, 172, 490, 20);
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 0, 0);
+        jLabel1.setBounds(0, 0, 0, 200);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
