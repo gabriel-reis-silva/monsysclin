@@ -27,51 +27,64 @@ public class Leituras extends javax.swing.JFrame {
         initComponents();
         showLeituras();
     }
- public ArrayList<Leitura> leituraList(){
-    
+
+    public ArrayList<Leitura> leituraList() {
+
         ArrayList<Leitura> leituraList = new ArrayList<>();
-    
+
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             String url = ("jdbc:sqlserver:"
-                + "//monsysclin.database.windows.net:1433;"
-                + "database=Monsysclin;"
-                + "user=administrador@monsysclin;"
-                + "password={#Gfgrupo6};"
-                + "encrypt=true;"
-                + "trustServerCertificate=false;"
-                + "hostNameInCertificate=*.database.windows.net;"
-                + "loginTimeout=30;");
+                    + "//monsysclin.database.windows.net:1433;"
+                    + "database=Monsysclin;"
+                    + "user=administrador@monsysclin;"
+                    + "password={#Gfgrupo6};"
+                    + "encrypt=true;"
+                    + "trustServerCertificate=false;"
+                    + "hostNameInCertificate=*.database.windows.net;"
+                    + "loginTimeout=30;");
             Connection conn = DriverManager.getConnection(url);
-            String query1 = "SELECT * FROM leitura2";
+            String query1 = "SELECT * FROM leitura";
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query1);
             Leitura leitura;
-            while (rs.next()){
-                leitura = new Leitura (rs.getInt("idLeitura"), rs.getString("cpuLeitura"), rs.getString("bytesRcv"), rs.getString("bytesSnd"));
+            while (rs.next()) {
+                leitura = new Leitura(rs.getInt("idLeitura"), 
+                        rs.getInt("fkMaquina"),
+                        rs.getString("cpuLeitura"),
+                        rs.getString("memoriaLeitura"),
+                        rs.getString("bytesRecebidos"),
+                        rs.getString("bytesEnviados"),
+                        rs.getString("disco"),
+                        rs.getString("datahoraLeitura"));
                 leituraList.add(leitura);
             }
-            
-        }catch (Exception e){
+
+        } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
-        
+
         return leituraList;
     }
-    
-    public void showLeituras(){
-    
+
+    public void showLeituras() {
+
         ArrayList<Leitura> list = leituraList();
-        DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
-        Object[] row = new Object[4];
-        for(int i=0; i<list.size();i++){
-            row[0]=list.get(i).getIdLeitura();
-            row[1]=list.get(i).getCpuLeitura();
-            row[2]=list.get(i).getBytesRcv();
-            row[3]=list.get(i).getBytesSnd();
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        Object[] row = new Object[8];
+        for (int i = 0; i < list.size(); i++) {
+            row[0] = list.get(i).getIdLeitura();
+            row[1] = list.get(i).getCpuLeitura();
+            row[2] = list.get(i).getMemoriaLeitura();
+            row[3] = list.get(i).getBytesRecebidos();
+            row[4] = list.get(i).getBytesEnviados();
+            row[5] = list.get(i).getDisco();
+            row[6] = list.get(i).getFkMaquina();
+            row[7] = list.get(i).getDatahoraLeitura();
             model.addRow(row);
         }
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -91,26 +104,32 @@ public class Leituras extends javax.swing.JFrame {
 
             },
             new String [] {
-                "idLeitura", "cpuLeitura", "bytesRcv", "bytesSnd"
+                "ID", "CPU", "Memória", "Bytes Recebidos", "Bytes Enviados", "Disco", "Maquina ID", "Data Leitura"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable1.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jTable1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 837, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(48, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 377, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41))
         );
 
         pack();
