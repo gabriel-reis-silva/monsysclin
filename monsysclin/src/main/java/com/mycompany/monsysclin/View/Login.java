@@ -55,15 +55,18 @@ public class Login extends javax.swing.JFrame {
                 senhaValida = rs.getString(4);
             }
 
+            executaValida();
+
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e);
+//            JOptionPane.showMessageDialog(null, e);
+            JOptionPane.showMessageDialog(null, "Credenciais incorretas", "Erro", JOptionPane.ERROR_MESSAGE);
         }
 
         return userValido1;
     }
 
     public void executaValida() {
-        valida();
+
         if (userValido1.equals(emailUser) && senhaValida.equals(senhaUser)) {
             JOptionPane.showMessageDialog(null, "Credenciais corretas");
 
@@ -161,7 +164,7 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        executaValida();
+        valida();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

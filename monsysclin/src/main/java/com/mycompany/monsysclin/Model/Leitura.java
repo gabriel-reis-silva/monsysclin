@@ -41,6 +41,7 @@ public class Leitura {
         return memoriaLeitura;
     }
 
+    
     public String getBytesRecebidos() {
         return bytesRecebidos;
     }
