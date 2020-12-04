@@ -25,9 +25,7 @@ public class SplashScreen extends javax.swing.JFrame {
      * Creates new form SplashScreen
      */
     public SplashScreen() {
-   fundo.setIcon(new ImageIcon(new javax.swing.ImageIcon(getClass().getResource("splash.png")).getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH)));
         try {
-            
             try {
                 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             } catch (ClassNotFoundException ex) {
@@ -38,7 +36,7 @@ public class SplashScreen extends javax.swing.JFrame {
                 Logger.getLogger(SplashScreen.class.getName()).log(Level.SEVERE, null, ex);
             }
             initComponents();
-
+            fundo.setIcon(new ImageIcon(new javax.swing.ImageIcon(getClass().getResource("/splash.png")).getImage().getScaledInstance(585, 199, Image.SCALE_SMOOTH)));
             new Thread() {
 
                 public void run() {
@@ -61,7 +59,7 @@ public class SplashScreen extends javax.swing.JFrame {
                     } catch (Exception e) {
                         JOptionPane.showMessageDialog(null, e);
                     }
-                    
+
                     //fecha a tela atual
                     dispose();
                 }
@@ -97,7 +95,7 @@ public class SplashScreen extends javax.swing.JFrame {
         jPanel1.add(jProgressBar1);
         jProgressBar1.setBounds(50, 172, 490, 20);
         jPanel1.add(fundo);
-        fundo.setBounds(0, 0, 0, 200);
+        fundo.setBounds(0, 0, 590, 200);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

@@ -8,10 +8,12 @@ package com.mycompany.monsysclin.View;
 import com.mycompany.monsysclin.Controller.Disco;
 import com.mycompany.monsysclin.Controller.Inserts;
 import com.mycompany.monsysclin.Model.Usuario;
+import java.awt.Image;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
