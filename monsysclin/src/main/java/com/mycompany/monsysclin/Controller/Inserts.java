@@ -23,6 +23,7 @@ public class Inserts {
     Cpu cpu = new Cpu();
     Memoria memoria = new Memoria();
     Network adaptador0 = new Network();
+    Disco disco = new Disco();
 
     String connectionUrl
             = "jdbc:sqlserver://monsysclin.database.windows.net:1433;"
@@ -45,7 +46,7 @@ public class Inserts {
                     stmt.setDouble(2, memoria.getUso());
                     stmt.setLong(3, adaptador0.bytesRecebidos());
                     stmt.setLong(4, adaptador0.bytesEnviados());
-                    stmt.setDouble(5, 1.1);
+                    stmt.setString(5, disco.espacofree().toString());
                     stmt.setInt(6, 15);
                     stmt.setString(7, "2020-12-03 15:49:50");
                     stmt.executeUpdate();

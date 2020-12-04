@@ -4,7 +4,11 @@
  * and open the template in the editor.
  */
 package com.mycompany.monsysclin.Controller;
+import java.util.ArrayList;
+import java.util.List;
+import oshi.SystemInfo;
 import oshi.software.os.OSFileStore;
+import oshi.software.os.OperatingSystem;
 
 /**
  *
@@ -12,32 +16,23 @@ import oshi.software.os.OSFileStore;
  */
 public class Disco {
 
-    OSFileStore disco;
-    
-public Long totalDisco(){
-Long qtdeEspacoDisco = (disco.getUsableSpace());
-return qtdeEspacoDisco;
-}
-//
-//List<OSFileStore> disco = new ArrayList<>();
-//   Double totalSpace;
-//   Double freeSpace;
-//   
-//   public Double totalDisco(){
-//       for(OSFileStore disk : disco){
-//            this.totalSpace = (double)disk.getTotalSpace();   
-//       }
-//       return this.totalSpace;
-//   }
-//   public Double livreDisco(){
-//       for(OSFileStore disk : disco){
-//            this.freeSpace = (double)disk.getFreeSpace() / Math.pow(10, 9);  
-//       }
-//       return this.freeSpace;
-//   }   
-//   
-//   public Double totalUso(){
-//       return totalDisco() - livreDisco();
-//   }
-//
+ SystemInfo si = new SystemInfo();
+        OperatingSystem os = si.getOperatingSystem();
+        List<OSFileStore> fileStores = os.getFileSystem().getFileStores();
+        List<Double> diskUso = new ArrayList<>();
+        List<Double> diskLivre = new ArrayList<>();
+
+        public List usodisco() {
+            for(OSFileStore ds : fileStores){
+                diskUso.add((double)ds.getTotalSpace() / Math.pow(10, 9) - ds.getFreeSpace()/ Math.pow(10, 9));
+            }
+            return diskUso;
+        }
+        
+        public List espacofree() {
+            for(OSFileStore ds : fileStores){
+                diskLivre.add(ds.getUsableSpace() / Math.pow(10, 9));
+            }
+            return diskLivre;
+        }
 }
