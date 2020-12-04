@@ -5,6 +5,7 @@
  */
 package com.mycompany.monsysclin.View;
 
+import com.mycompany.monsysclin.Controller.Disco;
 import com.mycompany.monsysclin.Controller.Inserts;
 import com.mycompany.monsysclin.Model.Usuario;
 import java.sql.Connection;
@@ -72,7 +73,7 @@ public class Login extends javax.swing.JFrame {
 
             Inserts inserts = new Inserts();
             inserts.insereDados();
-
+            Disco disco = new Disco();
             new Leituras().setVisible(true);
             this.dispose();
         } else {

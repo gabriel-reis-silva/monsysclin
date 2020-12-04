@@ -6,9 +6,12 @@
 package com.mycompany.monsysclin.View;
 
 import com.mycompany.monsysclin.Controller.Conexao;
+import java.awt.Image;
 import static java.lang.Thread.sleep;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
@@ -22,6 +25,7 @@ public class SplashScreen extends javax.swing.JFrame {
      * Creates new form SplashScreen
      */
     public SplashScreen() {
+   fundo.setIcon(new ImageIcon(new javax.swing.ImageIcon(getClass().getResource("splash.png")).getImage().getScaledInstance(30, 30, Image.SCALE_SMOOTH)));
         try {
             
             try {
@@ -55,6 +59,7 @@ public class SplashScreen extends javax.swing.JFrame {
                         new Login().setVisible(true);
                         conexao.getDatasource();
                     } catch (Exception e) {
+                        JOptionPane.showMessageDialog(null, e);
                     }
                     
                     //fecha a tela atual
@@ -91,20 +96,8 @@ public class SplashScreen extends javax.swing.JFrame {
         jProgressBar1.setStringPainted(true);
         jPanel1.add(jProgressBar1);
         jProgressBar1.setBounds(50, 172, 490, 20);
-
-        fundo.setIcon(new javax.swing.JLabel() {
-            public javax.swing.Icon getIcon() {
-                try {
-                    return new javax.swing.ImageIcon(
-                        new java.net.URL("https://i.imgur.com/AbNHGm1.png")
-                    );
-                } catch (java.net.MalformedURLException e) {
-                }
-                return null;
-            }
-        }.getIcon());
         jPanel1.add(fundo);
-        fundo.setBounds(0, 0, 585, 200);
+        fundo.setBounds(0, 0, 0, 200);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
