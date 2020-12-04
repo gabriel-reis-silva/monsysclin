@@ -5,7 +5,7 @@
  */
 package com.mycompany.monsysclin.View;
 
-import com.mycompany.monsysclin.Controller.Connection;
+import com.mycompany.monsysclin.Controller.Conexao;
 import static java.lang.Thread.sleep;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -23,6 +23,7 @@ public class SplashScreen extends javax.swing.JFrame {
      */
     public SplashScreen() {
         try {
+            
             try {
                 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             } catch (ClassNotFoundException ex) {
@@ -50,7 +51,7 @@ public class SplashScreen extends javax.swing.JFrame {
                     }
                     //comando para após "carregar" abrir a próxima tela
                     try {
-                        Connection conexao = new Connection();
+                        Conexao conexao = new Conexao();
                         new Login().setVisible(true);
                         conexao.getDatasource();
                     } catch (Exception e) {
@@ -78,7 +79,7 @@ public class SplashScreen extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jProgressBar1 = new javax.swing.JProgressBar();
-        jLabel1 = new javax.swing.JLabel();
+        fundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -90,8 +91,20 @@ public class SplashScreen extends javax.swing.JFrame {
         jProgressBar1.setStringPainted(true);
         jPanel1.add(jProgressBar1);
         jProgressBar1.setBounds(50, 172, 490, 20);
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 0, 0);
+
+        fundo.setIcon(new javax.swing.JLabel() {
+            public javax.swing.Icon getIcon() {
+                try {
+                    return new javax.swing.ImageIcon(
+                        new java.net.URL("https://i.imgur.com/AbNHGm1.png")
+                    );
+                } catch (java.net.MalformedURLException e) {
+                }
+                return null;
+            }
+        }.getIcon());
+        jPanel1.add(fundo);
+        fundo.setBounds(0, 0, 585, 200);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -144,7 +157,7 @@ public class SplashScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel fundo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JProgressBar jProgressBar1;
     // End of variables declaration//GEN-END:variables
