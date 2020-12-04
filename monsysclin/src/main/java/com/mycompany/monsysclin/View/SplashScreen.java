@@ -9,6 +9,7 @@ import com.mycompany.monsysclin.Controller.Conexao;
 import static java.lang.Thread.sleep;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
@@ -55,6 +56,7 @@ public class SplashScreen extends javax.swing.JFrame {
                         new Login().setVisible(true);
                         conexao.getDatasource();
                     } catch (Exception e) {
+                        JOptionPane.showMessageDialog(null, e);
                     }
                     
                     //fecha a tela atual

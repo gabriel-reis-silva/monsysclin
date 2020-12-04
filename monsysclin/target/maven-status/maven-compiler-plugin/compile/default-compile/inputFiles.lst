@@ -1,12 +1,13 @@
-D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\View\Maquinas.java
 D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\Model\Leitura.java
-D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\View\Processos.java
 D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\View\Login.java
-D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\Controller\Cpu.java
 D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\View\SplashScreen.java
 D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\Controller\Network.java
 D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\Controller\Memoria.java
 D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\Controller\Conexao.java
 D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\Controller\Inserts.java
-D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\Model\Usuario.java
 D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\View\Leituras.java
+D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\Controller\Disco.java
+D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\View\Maquinas.java
+D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\View\Processos.java
+D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\Controller\Cpu.java
+D:\Users\gabsg\Documents\Codes\monsysclin\src\main\java\com\mycompany\monsysclin\Model\Usuario.java

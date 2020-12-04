@@ -6,7 +6,9 @@ com\mycompany\monsysclin\View\Leituras$1.class
 com\mycompany\monsysclin\View\SplashScreen$2.class
 com\mycompany\monsysclin\Controller\Conexao.class
 com\mycompany\monsysclin\Controller\Inserts.class
+com\mycompany\monsysclin\Controller\Disco.class
 com\mycompany\monsysclin\View\SplashScreen$1.class
+com\mycompany\monsysclin\Controller\Inserts$1.class
 com\mycompany\monsysclin\View\SplashScreen.class
 com\mycompany\monsysclin\View\Processos$1.class
 com\mycompany\monsysclin\Controller\Memoria.class
