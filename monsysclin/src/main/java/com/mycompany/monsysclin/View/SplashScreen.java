@@ -27,7 +27,7 @@ public class SplashScreen extends javax.swing.JFrame {
     public SplashScreen() {
         try {
             try {
-                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+                UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
             } catch (ClassNotFoundException ex) {
                 Logger.getLogger(SplashScreen.class.getName()).log(Level.SEVERE, null, ex);
             } catch (InstantiationException ex) {
@@ -93,7 +93,7 @@ public class SplashScreen extends javax.swing.JFrame {
         jProgressBar1.setForeground(new java.awt.Color(0, 0, 153));
         jProgressBar1.setStringPainted(true);
         jPanel1.add(jProgressBar1);
-        jProgressBar1.setBounds(50, 172, 490, 20);
+        jProgressBar1.setBounds(40, 172, 500, 20);
         jPanel1.add(fundo);
         fundo.setBounds(0, 0, 590, 200);
 
