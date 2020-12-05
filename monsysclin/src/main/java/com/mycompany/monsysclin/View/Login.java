@@ -5,6 +5,7 @@
  */
 package com.mycompany.monsysclin.View;
 
+import com.mycompany.monsysclin.Controller.Conexao;
 import com.mycompany.monsysclin.Controller.Disco;
 import com.mycompany.monsysclin.Controller.Inserts;
 import com.mycompany.monsysclin.Model.Usuario;
@@ -35,20 +36,12 @@ public class Login extends javax.swing.JFrame {
     private String senhaValida;
 
     public String valida() {
+        Conexao conexao = new Conexao();
         emailUser = jTextField1.getText();
         senhaUser = jPasswordField1.getText();
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            String url = ("jdbc:sqlserver:"
-                    + "//monsysclin.database.windows.net:1433;"
-                    + "database=Monsysclin;"
-                    + "user=administrador@monsysclin;"
-                    + "password={#Gfgrupo6};"
-                    + "encrypt=true;"
-                    + "trustServerCertificate=false;"
-                    + "hostNameInCertificate=*.database.windows.net;"
-                    + "loginTimeout=30;");
-            Connection conn = DriverManager.getConnection(url);
+            Connection conn = DriverManager.getConnection(conexao.getStringUrl());
             String query1 = "SELECT * FROM usuario where emailUsuario = '" + emailUser + "' and senhaUsuario = '" + senhaUser + "'";
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query1);
@@ -75,8 +68,8 @@ public class Login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Credenciais corretas");
 
             Inserts inserts = new Inserts();
+            inserts.insereMaquina();
             inserts.insereDados();
-            Disco disco = new Disco();
             new Leituras().setVisible(true);
             this.dispose();
         } else {

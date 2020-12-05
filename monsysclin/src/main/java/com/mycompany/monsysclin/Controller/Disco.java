@@ -7,6 +7,7 @@ package com.mycompany.monsysclin.Controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import oshi.hardware.ComputerSystem;
 import oshi.SystemInfo;
 import oshi.software.os.OSFileStore;
 import oshi.software.os.OperatingSystem;
@@ -35,4 +36,5 @@ public class Disco {
         }
         return diskLivre;
     }
+    
 }

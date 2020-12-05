@@ -5,6 +5,7 @@
  */
 package com.mycompany.monsysclin.Controller;
 
+import com.mycompany.monsysclin.Model.Selects;
 import com.mycompany.monsysclin.View.Leituras;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -27,12 +28,31 @@ public class Inserts {
     Memoria memoria = new Memoria();
     Network adaptador0 = new Network();
     Disco disco = new Disco();
+    Conexao conexao = new Conexao();
+    Selects maquina = new Selects();
+    Machine machine = new Machine();
+    String connectionUrl = conexao.getStringUrl();
 
-    String connectionUrl
-            = "jdbc:sqlserver://monsysclin.database.windows.net:1433;"
-            + "database=Monsysclin;user=administrador@monsysclin;"
-            + "password=#Gfgrupo6;encrypt=true;"
-            + "trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30";
+    public void insereMaquina() {
+        if (maquina.checaMaquina()) {
+            System.out.println("Da pra inserir");
+
+            try (Connection connection = DriverManager.getConnection(connectionUrl)) {
+                PreparedStatement stmt = connection.prepareStatement("INSERT INTO maquina "
+                        + "(nomeMaquina, funcaoMaquina, modeloMaquina, serialNumber) values (?, ?, ?, ?);");
+                stmt.setString(1, "Maquina Do Reis");
+                stmt.setString(2, "Uma pá de fita");
+                stmt.setString(3, machine.modeloMaquina());
+                stmt.setString(4, machine.numeroSerie());
+                stmt.executeUpdate();
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+
+        } else {
+            System.out.println("Maquina já inserida. Ja foi fio");
+        }
+    }
 
     public void insereDados() {
 
@@ -41,7 +61,7 @@ public class Inserts {
             @Override
             public void run() {
                 String timeStamp = new SimpleDateFormat("dd/MM/yyyy HH:m:ss").format(new Date());
-                
+
                 try (Connection connection = DriverManager.getConnection(connectionUrl);) {
                     PreparedStatement stmt = connection.prepareStatement("INSERT INTO leitura "
                             + "(cpuLeitura, memoriaLeitura, bytesRecebidos, bytesEnviados, disco, fkMaquina, datahoraLeitura ) values (?, ?, ?, ?, ?, ?, ?)");
