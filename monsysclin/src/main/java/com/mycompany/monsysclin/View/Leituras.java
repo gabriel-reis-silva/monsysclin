@@ -5,6 +5,7 @@
  */
 package com.mycompany.monsysclin.View;
 
+import com.mycompany.monsysclin.Controller.Conexao;
 import com.mycompany.monsysclin.Model.Leitura;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -33,25 +34,16 @@ public class Leituras extends javax.swing.JFrame {
     public ArrayList<Leitura> leituraList() {
 
         ArrayList<Leitura> leituraList = new ArrayList<>();
-
+        Conexao conexao = new Conexao();
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            String url = ("jdbc:sqlserver:"
-                    + "//monsysclin.database.windows.net:1433;"
-                    + "database=Monsysclin;"
-                    + "user=administrador@monsysclin;"
-                    + "password={#Gfgrupo6};"
-                    + "encrypt=true;"
-                    + "trustServerCertificate=false;"
-                    + "hostNameInCertificate=*.database.windows.net;"
-                    + "loginTimeout=30;");
-            Connection conn = DriverManager.getConnection(url);
+            Connection conn = DriverManager.getConnection(conexao.getStringUrl());
             String query1 = "SELECT * FROM leitura";
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query1);
             Leitura leitura;
             while (rs.next()) {
-                leitura = new Leitura(rs.getInt("idLeitura"), 
+                leitura = new Leitura(rs.getInt("idLeitura"),
                         rs.getInt("fkMaquina"),
                         rs.getString("cpuLeitura"),
                         rs.getString("memoriaLeitura"),
@@ -124,7 +116,7 @@ public class Leituras extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 837, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 963, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
