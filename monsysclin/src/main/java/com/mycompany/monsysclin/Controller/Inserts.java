@@ -49,8 +49,8 @@ public class Inserts {
                     stmt.setDouble(2, memoria.getUso());
                     stmt.setLong(3, adaptador0.bytesRecebidos());
                     stmt.setLong(4, adaptador0.bytesEnviados());
-                    stmt.setString(5, "1.1");
-                    stmt.setInt(6, 15);
+                    stmt.setDouble(5, disco.usodisco());
+                    stmt.setInt(6, 20);
                     stmt.setString(7, timeStamp);
                     stmt.executeUpdate();
                 } catch (Exception e) {
