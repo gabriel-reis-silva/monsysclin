@@ -12,15 +12,15 @@ public class Network {
     public List<NetworkIF> netw = hal.getNetworkIFs();
 
     public Long bytesRecebidos() {
-        netw.get(0).updateAttributes();
-        Long bytesRcv = netw.get(0).getBytesRecv();
+        netw.get(1).updateAttributes();
+        Long bytesRcv = netw.get(1).getBytesRecv();
         System.out.println("Bytes Recebidos" + bytesRcv);
         return bytesRcv;
     }
 
     public Long bytesEnviados() {
-        netw.get(0).updateAttributes();
-        Long bytesSnt = si.getHardware().getNetworkIFs().get(0).getBytesSent();
+        netw.get(1).updateAttributes();
+        Long bytesSnt = si.getHardware().getNetworkIFs().get(1).getBytesSent();
         System.out.println("Bytes Enviados" + bytesSnt);
         return bytesSnt;
     }
