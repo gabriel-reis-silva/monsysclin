@@ -9,6 +9,9 @@ import com.mycompany.monsysclin.View.Leituras;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 import javax.swing.JOptionPane;
@@ -34,28 +37,29 @@ public class Inserts {
     public void insereDados() {
 
         Timer timer = new Timer();
-
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
+                String timeStamp = new SimpleDateFormat("dd/MM/yyyy HH:m:ss").format(new Date());
+                
                 try (Connection connection = DriverManager.getConnection(connectionUrl);) {
-
                     PreparedStatement stmt = connection.prepareStatement("INSERT INTO leitura "
                             + "(cpuLeitura, memoriaLeitura, bytesRecebidos, bytesEnviados, disco, fkMaquina, datahoraLeitura ) values (?, ?, ?, ?, ?, ?, ?)");
                     stmt.setString(1, cpu.toString());
                     stmt.setDouble(2, memoria.getUso());
                     stmt.setLong(3, adaptador0.bytesRecebidos());
                     stmt.setLong(4, adaptador0.bytesEnviados());
-                    stmt.setString(5, disco.espacofree().toString());
+                    stmt.setString(5, "1.1");
                     stmt.setInt(6, 15);
-                    stmt.setString(7, "2020-12-03 15:49:50");
+                    stmt.setString(7, timeStamp);
                     stmt.executeUpdate();
                 } catch (Exception e) {
                     JOptionPane.showMessageDialog(null, e);
                 }
-
+                Leituras leituras = new Leituras();
+                leituras.showLeituras();
             }
-        }, 2000, 2000);
+        }, 5000, 5000);
 
     }
 

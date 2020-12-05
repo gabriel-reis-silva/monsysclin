@@ -13,9 +13,9 @@ public class Memoria {
     public Double getUso() {
         this.memoriaDisponivel = si.getHardware().getMemory().getAvailable();
         this.memoriaTotal = si.getHardware().getMemory().getTotal();
-
+        
         this.usoMemoria = (this.memoriaTotal - this.memoriaDisponivel) / Math.pow(10, 9);
-
+        System.out.println("Uso memória"+usoMemoria);
         return usoMemoria;
     }
 

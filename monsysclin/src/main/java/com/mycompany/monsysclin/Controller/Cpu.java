@@ -22,6 +22,7 @@ public class Cpu {
 
     @Override
     public String toString() {
+        System.out.println(String.format("Uso CPU %.2f", cpu.getSystemCpuLoadBetweenTicks(oldTicks) * 100d));
         return String.format("%.2f", cpu.getSystemCpuLoadBetweenTicks(oldTicks) * 100d);
     }
 
