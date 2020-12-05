@@ -24,11 +24,9 @@ public class Disco {
     List<Double> diskLivre = new ArrayList<>();
 
     public Double usodisco() {
-
-//            for(OSFileStore ds : fileStores){
-//                diskUso.add((double)ds.getTotalSpace() / Math.pow(10, 9) - ds.getFreeSpace()/ Math.pow(10, 9));
-//            }
-        return (fileStores.get(0).getTotalSpace() / Math.pow(10, 9) - fileStores.get(0).getFreeSpace() / Math.pow(10, 9));
+        Double uso = (fileStores.get(0).getTotalSpace() / Math.pow(10, 9) - fileStores.get(0).getFreeSpace() / Math.pow(10, 9));
+        System.out.println("espaco de disco em uso " + uso);
+        return uso;
     }
 
     public List espacofree() {
