@@ -1,5 +1,7 @@
 com\mycompany\monsysclin\View\Login$2.class
+com\mycompany\monsysclin\Model\Selects.class
 com\mycompany\monsysclin\Controller\Conexao.class
+com\mycompany\monsysclin\Controller\Machine.class
 com\mycompany\monsysclin\Controller\Disco.class
 com\mycompany\monsysclin\View\SplashScreen$1.class
 com\mycompany\monsysclin\Controller\Inserts$1.class
@@ -10,6 +12,7 @@ com\mycompany\monsysclin\Model\Usuario.class
 com\mycompany\monsysclin\View\Maquinas.class
 com\mycompany\monsysclin\Controller\Cpu.class
 com\mycompany\monsysclin\Controller\Network.class
+com\mycompany\monsysclin\Model\Maquinas.class
 com\mycompany\monsysclin\View\Login.class
 com\mycompany\monsysclin\View\Leituras$1.class
 com\mycompany\monsysclin\View\SplashScreen$2.class
