@@ -6,6 +6,7 @@
 package com.mycompany.monsysclin.View;
 
 import com.mycompany.monsysclin.Controller.Conexao;
+import com.mycompany.monsysclin.Controller.Machine;
 import com.mycompany.monsysclin.Model.Leitura;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -35,10 +36,12 @@ public class Leituras extends javax.swing.JFrame {
 
         ArrayList<Leitura> leituraList = new ArrayList<>();
         Conexao conexao = new Conexao();
+        Machine maquina = new Machine();
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection conn = DriverManager.getConnection(conexao.getStringUrl());
-            String query1 = "SELECT * FROM leitura";
+            String query1 = "select idLeitura, cpuLeitura, memoriaLeitura, bytesRecebidos,bytesEnviados, disco, fkMaquina, datahoraLeitura"
+                    + " from leitura INNER JOIN maquina on idMaquina = fkMaquina WHERE serialNumber = '" + maquina.numeroSerie()+"'";
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query1);
             Leitura leitura;

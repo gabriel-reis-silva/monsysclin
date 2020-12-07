@@ -24,11 +24,13 @@ public class Disco {
     List<Double> diskUso = new ArrayList<>();
     List<Double> diskLivre = new ArrayList<>();
 
-    public Double usodisco() {
+    public String usodisco() {
         Double uso = (fileStores.get(0).getTotalSpace() / Math.pow(10, 9) - fileStores.get(0).getFreeSpace() / Math.pow(10, 9));
-        System.out.println("espaco de disco em uso " + uso);
-        return uso;
-    }
+        Double porc = (uso * 100)/(fileStores.get(0).getTotalSpace()/ Math.pow(10, 9)); 
+        System.out.println("espaco de disco em uso " + porc + "%");
+        return String.format("%.2f", porc);
+    }//uso por 100 e dividir pelo total
+    
 
     public List espacofree() {
         for (OSFileStore ds : fileStores) {

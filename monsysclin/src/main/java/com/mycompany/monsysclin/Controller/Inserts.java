@@ -34,14 +34,14 @@ public class Inserts {
     String connectionUrl = conexao.getStringUrl();
 
     public void insereMaquina() {
-        if (maquina.checaMaquina()) {
+        if (!maquina.checaMaquina()) {
             System.out.println("Da pra inserir");
 
             try (Connection connection = DriverManager.getConnection(connectionUrl)) {
                 PreparedStatement stmt = connection.prepareStatement("INSERT INTO maquina "
                         + "(nomeMaquina, funcaoMaquina, modeloMaquina, serialNumber) values (?, ?, ?, ?);");
-                stmt.setString(1, "Maquina Do Reis");
-                stmt.setString(2, "Uma pá de fita");
+                stmt.setString(1, machine.nomeMaquina());
+                stmt.setString(2, "coisas");
                 stmt.setString(3, machine.modeloMaquina());
                 stmt.setString(4, machine.numeroSerie());
                 stmt.executeUpdate();
@@ -55,7 +55,7 @@ public class Inserts {
     }
 
     public void insereDados() {
-
+        
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
@@ -64,12 +64,13 @@ public class Inserts {
 
                 try (Connection connection = DriverManager.getConnection(connectionUrl);) {
                     PreparedStatement stmt = connection.prepareStatement("INSERT INTO leitura "
-                            + "(cpuLeitura, memoriaLeitura, bytesRecebidos, bytesEnviados, disco, fkMaquina, datahoraLeitura ) values (?, ?, ?, ?, ?, ?, ?)");
+                            + "(cpuLeitura, memoriaLeitura, bytesRecebidos, bytesEnviados, disco, fkMaquina, datahoraLeitura ) "
+                            + "values (?, ?, ?, ?, ?, ?, ?)");
                     stmt.setString(1, cpu.toString());
                     stmt.setDouble(2, memoria.getUso());
                     stmt.setLong(3, adaptador0.bytesRecebidos());
                     stmt.setLong(4, adaptador0.bytesEnviados());
-                    stmt.setDouble(5, disco.usodisco());
+                    stmt.setString(5, disco.usodisco());
                     stmt.setInt(6, 20);
                     stmt.setString(7, timeStamp);
                     stmt.executeUpdate();
