@@ -194,7 +194,7 @@ public class Login extends javax.swing.JFrame {
                 new Login().setVisible(true);
                  SystemInfo si = new SystemInfo();
                 OperatingSystem os = si.getOperatingSystem();
-                System.out.println(os.getSessions().get(2).getHost());
+                System.out.println("NOME DO USER" + os.getSessions().get(2).getHost());
             }
         });
     }
