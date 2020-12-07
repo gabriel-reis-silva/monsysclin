@@ -191,10 +191,7 @@ public class Login extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
-                 SystemInfo si = new SystemInfo();
-                OperatingSystem os = si.getOperatingSystem();
-                System.out.println("NOME DO USER" + os.getSessions().get(2).getHost());
+                new Login().setVisible(true);                
             }
         });
     }
