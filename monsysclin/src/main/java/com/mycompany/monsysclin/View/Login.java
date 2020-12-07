@@ -16,6 +16,8 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import oshi.SystemInfo;
+import oshi.software.os.OperatingSystem;
 
 /**
  *
@@ -190,6 +192,9 @@ public class Login extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Login().setVisible(true);
+                 SystemInfo si = new SystemInfo();
+                OperatingSystem os = si.getOperatingSystem();
+                System.out.println(os.getSessions().get(2).getHost());
             }
         });
     }

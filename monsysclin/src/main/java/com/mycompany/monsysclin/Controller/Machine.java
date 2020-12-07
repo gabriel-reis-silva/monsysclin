@@ -10,7 +10,6 @@ import oshi.hardware.ComputerSystem;
 import oshi.hardware.HardwareAbstractionLayer;
 
 public class Machine {
-
     private SystemInfo si = new SystemInfo();
     private HardwareAbstractionLayer hal = si.getHardware();
     private String numeroSerie;
@@ -18,7 +17,7 @@ public class Machine {
     ComputerSystem computer;
 
     public String numeroSerie() {
-        
+
         System.out.println("Numero série " + hal.getComputerSystem().getSerialNumber());
         numeroSerie = hal.getComputerSystem().getSerialNumber();
         return numeroSerie;
@@ -28,6 +27,10 @@ public class Machine {
         System.out.println("Modelo maquina " + hal.getComputerSystem().getModel());
         modeloMaquina = hal.getComputerSystem().getModel();
         return modeloMaquina;
+    }
+
+    public String nomeMaquina() {
+        return hal.getComputerSystem().getManufacturer();
     }
 
     public String getNumeroSerie() {
