@@ -5,6 +5,7 @@ com\mycompany\monsysclin\Controller\Machine.class
 com\mycompany\monsysclin\Controller\Disco.class
 com\mycompany\monsysclin\View\SplashScreen$1.class
 com\mycompany\monsysclin\Controller\Inserts$1.class
+com\mycompany\monsysclin\Controller\Processos.class
 com\mycompany\monsysclin\View\Processos$1.class
 com\mycompany\monsysclin\Controller\Memoria.class
 com\mycompany\monsysclin\View\Maquinas$1.class
