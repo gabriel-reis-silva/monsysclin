@@ -61,15 +61,13 @@ public class Inserts {
                 String timeStamp = new SimpleDateFormat("dd/MM/yyyy HH:m:ss").format(new Date());
 
                 try (Connection connection = DriverManager.getConnection(connectionUrl);) {
-                    PreparedStatement stmt = connection.prepareStatement("INSERT INTO leitura "
-                            + "(cpuLeitura, memoriaLeitura, bytesRecebidos, bytesEnviados, disco, fkMaquina, datahoraLeitura ) "
-                            + "values (?, ?, ?, ?, ?, ?, ?)");
-                    stmt.setString(1, cpu.toString());
-                    stmt.setDouble(2, memoria.getUso());
-                    stmt.setLong(3, adaptador0.bytesRecebidos());
-                    stmt.setLong(4, adaptador0.bytesEnviados());
-                    stmt.setString(5, disco.usodisco());
-                    stmt.setInt(6, 20);
+                    PreparedStatement stmt = connection.prepareStatement("EXEC insertLeitura ?,?,?,?,?,?,?;");
+                    stmt.setString(1, machine.numeroSerie());
+                    stmt.setString(2, cpu.toString());
+                    stmt.setDouble(3, memoria.getUso());
+                    stmt.setLong(4, adaptador0.bytesRecebidos());
+                    stmt.setLong(5, adaptador0.bytesEnviados());
+                    stmt.setString(6, disco.usodisco());
                     stmt.setString(7, timeStamp);
                     stmt.executeUpdate();
                 } catch (Exception e) {
