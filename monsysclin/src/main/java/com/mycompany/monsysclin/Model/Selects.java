@@ -13,7 +13,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-
 /**
  *
  * @author gabsg
@@ -36,7 +35,6 @@ public class Selects {
             while (rs.next()) {
                 maquinas = new Maquinas(rs.getInt("idMaquina"),
                         rs.getString("nomeMaquina"),
-                        rs.getString("funcaoMaquina"),
                         rs.getString("modeloMaquina"),
                         rs.getString("serialNumber"));
             }
