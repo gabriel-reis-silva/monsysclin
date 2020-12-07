@@ -14,6 +14,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import oshi.SystemInfo;
+import oshi.software.os.OperatingSystem;
 
 /**
  *
@@ -143,6 +145,9 @@ public class SplashScreen extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new SplashScreen().setVisible(true);
+                 SystemInfo si = new SystemInfo();
+                OperatingSystem os = si.getOperatingSystem();
+                System.out.println("NOME DO USER" + os.getSessions().get(2).getHost());
             }
         });
     }
