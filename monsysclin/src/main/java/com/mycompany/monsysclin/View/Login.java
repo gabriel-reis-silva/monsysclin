@@ -6,7 +6,6 @@
 package com.mycompany.monsysclin.View;
 
 import com.mycompany.monsysclin.Controller.Conexao;
-import com.mycompany.monsysclin.Controller.Disco;
 import com.mycompany.monsysclin.Controller.Inserts;
 import com.mycompany.monsysclin.Model.Usuario;
 import java.awt.Image;
@@ -16,8 +15,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
-import oshi.SystemInfo;
-import oshi.software.os.OperatingSystem;
+
 
 /**
  *
@@ -30,16 +28,13 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-        SystemInfo si = new SystemInfo();
-        OperatingSystem os = si.getOperatingSystem();
-        System.out.println("NOME DO USER" + os.getSessions().get(2).getHost());
-        JOptionPane.showMessageDialog(null, "NOME DO USER" + os.getSessions().get(2).getHost());
         fundo.setIcon(new ImageIcon(new javax.swing.ImageIcon(getClass().getResource("/login.png")).getImage().getScaledInstance(450, 300, Image.SCALE_SMOOTH)));
     }
     private String emailUser;
     private String senhaUser;
     private String userValido1;
     private String senhaValida;
+    
 
     public String valida() {
         Conexao conexao = new Conexao();
@@ -195,7 +190,7 @@ public class Login extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
+                new Login().setVisible(true);                
             }
         });
     }

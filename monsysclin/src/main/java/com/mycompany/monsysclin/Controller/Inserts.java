@@ -10,13 +10,11 @@ import com.mycompany.monsysclin.View.Leituras;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
-import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 import javax.swing.JOptionPane;
-import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
  *
@@ -31,6 +29,7 @@ public class Inserts {
     Conexao conexao = new Conexao();
     Selects maquina = new Selects();
     Machine machine = new Machine();
+    Processos processos = new Processos();
     String connectionUrl = conexao.getStringUrl();
 
     public void insereMaquina() {
@@ -39,11 +38,10 @@ public class Inserts {
 
             try (Connection connection = DriverManager.getConnection(connectionUrl)) {
                 PreparedStatement stmt = connection.prepareStatement("INSERT INTO maquina "
-                        + "(nomeMaquina, funcaoMaquina, modeloMaquina, serialNumber) values (?, ?, ?, ?);");
-                stmt.setString(1, machine.nomeMaquina());
-                stmt.setString(2, "coisas");
-                stmt.setString(3, machine.modeloMaquina());
-                stmt.setString(4, machine.numeroSerie());
+                        + "(nomeMaquina, modeloMaquina, serialNumber) values (?, ?, ?);");
+                stmt.setString(1, machine.getHostname());
+                stmt.setString(2, machine.modeloMaquina());
+                stmt.setString(3, machine.numeroSerie());
                 stmt.executeUpdate();
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, e);
@@ -55,7 +53,7 @@ public class Inserts {
     }
 
     public void insereDados() {
-        
+
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override

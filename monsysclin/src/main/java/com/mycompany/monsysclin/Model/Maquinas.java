@@ -10,6 +10,7 @@ package com.mycompany.monsysclin.Model;
  * @author gabsg
  */
 public class Maquinas {
+
     private Integer idMaquina;
     private String nomeMaquina, funcaoMaquina, modeloMaquina, serialNumber;
 
@@ -40,6 +41,5 @@ public class Maquinas {
     public String getSerialNumber() {
         return serialNumber;
     }
-    
-    
+
 }

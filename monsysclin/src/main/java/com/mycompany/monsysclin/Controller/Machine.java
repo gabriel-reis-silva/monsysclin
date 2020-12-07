@@ -5,11 +5,13 @@
  */
 package com.mycompany.monsysclin.Controller;
 
+import java.net.InetAddress;
 import oshi.SystemInfo;
 import oshi.hardware.ComputerSystem;
 import oshi.hardware.HardwareAbstractionLayer;
 
 public class Machine {
+
     private SystemInfo si = new SystemInfo();
     private HardwareAbstractionLayer hal = si.getHardware();
     private String numeroSerie;
@@ -27,6 +29,14 @@ public class Machine {
         System.out.println("Modelo maquina " + hal.getComputerSystem().getModel());
         modeloMaquina = hal.getComputerSystem().getModel();
         return modeloMaquina;
+    }
+
+    public String getHostname() {
+        try {
+            return InetAddress.getLocalHost().getHostName();
+        } catch (Exception e) {
+        }
+        return "Maquina sem nome";
     }
 
     public String nomeMaquina() {
