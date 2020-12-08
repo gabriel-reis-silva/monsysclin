@@ -26,11 +26,16 @@ public class Disco {
 
     public String usodisco() {
         Double uso = (fileStores.get(0).getTotalSpace() / Math.pow(10, 9) - fileStores.get(0).getFreeSpace() / Math.pow(10, 9));
-        Double porc = (uso * 100)/(fileStores.get(0).getTotalSpace()/ Math.pow(10, 9)); 
+        Double porc = (uso * 100) / (fileStores.get(0).getTotalSpace() / Math.pow(10, 9));
         System.out.println("espaco de disco em uso " + porc + "%");
         return String.format("%.2f", porc);
-    }//uso por 100 e dividir pelo total
-    
+    }
+
+    public Double usoDiscoPorc() {
+        Double uso = (fileStores.get(0).getTotalSpace() / Math.pow(10, 9) - fileStores.get(0).getFreeSpace() / Math.pow(10, 9));
+        Double porc = (uso * 100)/(fileStores.get(0).getTotalSpace()/ Math.pow(10, 9)); 
+        return porc;
+    }
 
     public List espacofree() {
         for (OSFileStore ds : fileStores) {
@@ -38,5 +43,5 @@ public class Disco {
         }
         return diskLivre;
     }
-    
+
 }

@@ -1,5 +1,6 @@
 com\mycompany\monsysclin\View\Login$2.class
 com\mycompany\monsysclin\Model\Selects.class
+com\mycompany\monsysclin\View\Leituras$5.class
 com\mycompany\monsysclin\Controller\Conexao.class
 com\mycompany\monsysclin\Controller\Machine.class
 com\mycompany\monsysclin\Controller\Disco.class
@@ -8,6 +9,7 @@ com\mycompany\monsysclin\Controller\Inserts$1.class
 com\mycompany\monsysclin\Controller\Processos.class
 com\mycompany\monsysclin\View\Processos$1.class
 com\mycompany\monsysclin\Controller\Memoria.class
+com\mycompany\monsysclin\View\Leituras$3.class
 com\mycompany\monsysclin\View\Maquinas$1.class
 com\mycompany\monsysclin\Model\Usuario.class
 com\mycompany\monsysclin\View\Maquinas.class
@@ -20,6 +22,7 @@ com\mycompany\monsysclin\View\SplashScreen$2.class
 com\mycompany\monsysclin\View\Login$3.class
 com\mycompany\monsysclin\Controller\Inserts.class
 com\mycompany\monsysclin\View\SplashScreen.class
+com\mycompany\monsysclin\View\Leituras$4.class
 com\mycompany\monsysclin\View\Processos.class
 com\mycompany\monsysclin\View\Leituras.class
 com\mycompany\monsysclin\View\Login$1.class

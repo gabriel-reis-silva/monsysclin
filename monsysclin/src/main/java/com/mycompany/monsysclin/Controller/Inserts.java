@@ -6,7 +6,6 @@
 package com.mycompany.monsysclin.Controller;
 
 import com.mycompany.monsysclin.Model.Selects;
-import com.mycompany.monsysclin.View.Leituras;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
@@ -73,8 +72,7 @@ public class Inserts {
                 } catch (Exception e) {
                     JOptionPane.showMessageDialog(null, e);
                 }
-                Leituras leituras = new Leituras();
-                leituras.showLeituras();
+
             }
         }, 5000, 5000);
 
