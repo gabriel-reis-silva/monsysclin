@@ -34,13 +34,13 @@ public class Machine {
                 Process SerNumProcess = Runtime.getRuntime().exec(command);
                 BufferedReader sNumReader = new BufferedReader(new InputStreamReader(SerNumProcess.getInputStream()));
                 sNum = sNumReader.readLine().trim();
-                System.out.println("CEREAL DO LINUX" + sNumReader.readLine().trim());
                 SerNumProcess.waitFor();
                 sNumReader.close();
             } catch (Exception ex) {
                 System.err.println("Linux Motherboard Exp : " + ex.getMessage());
                 sNum = null;
             }
+            System.out.println("CEREAL DO LINUX" + sNum);
             numeroSerie = sNum;
             return sNum;
         }
