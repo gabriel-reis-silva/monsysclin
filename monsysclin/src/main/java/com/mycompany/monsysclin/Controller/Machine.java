@@ -25,8 +25,9 @@ public class Machine {
     public String numeroSerie() {
         String OSName = System.getProperty("os.name");
         if (OSName.contains("Windows")) {
-//                return (getWindowsMotherboard_SerialNumber());
-            System.out.println("WINDOWS NUMBER");
+            System.out.println("Numero série " + hal.getComputerSystem().getSerialNumber());
+            numeroSerie = hal.getComputerSystem().getSerialNumber();
+            System.out.println("SO: WINDOWS");
         } else {
             String command = "sudo dmidecode -s system-serial-number";
             String sNum = null;
@@ -40,13 +41,10 @@ public class Machine {
                 System.err.println("Linux Motherboard Exp : " + ex.getMessage());
                 sNum = null;
             }
-            System.out.println("CEREAL DO LINUX" + sNum);
+            System.out.println("SO: LINUX" + sNum);
             numeroSerie = sNum;
             return sNum;
-        }
-
-//        System.out.println("Numero série " + hal.getComputerSystem().getSerialNumber());
-//        numeroSerie = hal.getComputerSystem().getSerialNumber();
+        }   
         return numeroSerie;
     }
 

@@ -87,10 +87,10 @@ public class Leituras extends javax.swing.JFrame {
                 pbarMemoria.setValue(memoria.getPercentual().intValue());
                 pbarDisco.setValue(disco.usoDiscoPorc().intValue());
 
-                dataset.setValue(disco.nomeDisco() + " Em uso: " + disco.uso().intValue()
-                        + " GB ", disco.uso().intValue());
-                dataset.setValue(disco.nomeDisco() + " Livre: " + disco.livre().intValue()
-                        + "GB ", disco.livre().intValue());
+                dataset.setValue(disco.nomeDisco() + " Em uso: " + String.format("%.2f", disco.uso())
+                        + " GB ", disco.uso());
+                dataset.setValue(disco.nomeDisco() + " Livre: " + String.format("%.2f", disco.livre())
+                        + "GB ", disco.livre());
             }
         }, 5000, 5000);
     }
