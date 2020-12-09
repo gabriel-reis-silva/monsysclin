@@ -28,7 +28,7 @@ public class Machine {
 //                return (getWindowsMotherboard_SerialNumber());
             System.out.println("WINDOWS NUMBER");
         } else {
-            String command = "sudo dmidecode -t system | grep Serial";
+            String command = "sudo dmidecode -s system-serial-number";
             String sNum = null;
             try {
                 Process SerNumProcess = Runtime.getRuntime().exec(command);
