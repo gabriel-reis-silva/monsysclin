@@ -73,7 +73,7 @@ public class SerialLinux {
      * @return 
      */
     private static String GetLinuxMotherBoard_serialNumber() {
-        String command = "dmidecode -s baseboard-serial-number";
+        String command = "dmidecode -t system | grep Serial";
         String sNum = null; 
         try {   
             Process SerNumProcess = Runtime.getRuntime().exec(command);

@@ -5,6 +5,10 @@
  */
 package com.mycompany.monsysclin.Controller;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.InputStreamReader;
 import java.net.InetAddress;
 import oshi.SystemInfo;
 import oshi.hardware.ComputerSystem;
@@ -19,9 +23,30 @@ public class Machine {
     ComputerSystem computer;
 
     public String numeroSerie() {
+        String OSName = System.getProperty("os.name");
+        if (OSName.contains("Windows")) {
+//                return (getWindowsMotherboard_SerialNumber());
+            System.out.println("WINDOWS NUMBER");
+        } else {
+            String command = "dmidecode -t system | grep Serial";
+            String sNum = null;
+            try {
+                Process SerNumProcess = Runtime.getRuntime().exec(command);
+                BufferedReader sNumReader = new BufferedReader(new InputStreamReader(SerNumProcess.getInputStream()));
+                sNum = sNumReader.readLine().trim();
+                System.out.println("CEREAL DO LINUX" + sNumReader.readLine().trim());
+                SerNumProcess.waitFor();
+                sNumReader.close();
+            } catch (Exception ex) {
+                System.err.println("Linux Motherboard Exp : " + ex.getMessage());
+                sNum = null;
+            }
+            numeroSerie = sNum;
+            return sNum;
+        }
 
-        System.out.println("Numero série " + hal.getComputerSystem().getSerialNumber());
-        numeroSerie = hal.getComputerSystem().getSerialNumber();
+//        System.out.println("Numero série " + hal.getComputerSystem().getSerialNumber());
+//        numeroSerie = hal.getComputerSystem().getSerialNumber();
         return numeroSerie;
     }
 
