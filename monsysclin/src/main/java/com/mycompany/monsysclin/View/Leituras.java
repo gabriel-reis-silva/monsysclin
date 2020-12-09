@@ -5,12 +5,9 @@
  */
 package com.mycompany.monsysclin.View;
 
-import com.mycompany.monsysclin.Controller.Conexao;
-import com.mycompany.monsysclin.Controller.Cpu;
-import com.mycompany.monsysclin.Controller.Disco;
-import com.mycompany.monsysclin.Controller.Machine;
-import com.mycompany.monsysclin.Controller.Memoria;
+import com.mycompany.monsysclin.Controller.*;
 import com.mycompany.monsysclin.Model.Leitura;
+import java.awt.BorderLayout;
 import java.awt.Image;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -22,6 +19,12 @@ import java.util.TimerTask;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PiePlot3D;
+import org.jfree.chart.util.Rotation;
+import org.jfree.data.general.DefaultPieDataset;
 
 /**
  *
@@ -32,6 +35,7 @@ public class Leituras extends javax.swing.JFrame {
     Cpu cpu = new Cpu();
     Memoria memoria = new Memoria();
     Disco disco = new Disco();
+    DefaultPieDataset dataset = new DefaultPieDataset();
 
     public Leituras() {
         initComponents();
@@ -39,6 +43,7 @@ public class Leituras extends javax.swing.JFrame {
         showLeituras();
         txtArea.setText(cpu.cpuInfo().toString());
         atualizaBarras();
+        iniciaGrafico();
     }
 
     public ArrayList<Leitura> leituraList() {
@@ -81,6 +86,11 @@ public class Leituras extends javax.swing.JFrame {
                 pbarCpu.setValue(cpu.cpuUsage().intValue());
                 pbarMemoria.setValue(memoria.getPercentual().intValue());
                 pbarDisco.setValue(disco.usoDiscoPorc().intValue());
+
+                dataset.setValue(disco.nomeDisco() + " Em uso: " + disco.uso().intValue()
+                        + " GB ", disco.uso().intValue());
+                dataset.setValue(disco.nomeDisco() + " Livre: " + disco.livre().intValue()
+                        + "GB ", disco.livre().intValue());
             }
         }, 5000, 5000);
     }
@@ -132,6 +142,7 @@ public class Leituras extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         atualizaDados = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
         fundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -161,7 +172,7 @@ public class Leituras extends javax.swing.JFrame {
         }
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(6, 276, 1216, 376);
+        jScrollPane1.setBounds(15, 356, 1200, 310);
 
         btnSair.setBackground(new java.awt.Color(255, 0, 0));
         btnSair.setText("X");
@@ -215,11 +226,15 @@ public class Leituras extends javax.swing.JFrame {
             }
         });
         getContentPane().add(atualizaDados);
-        atualizaDados.setBounds(567, 240, 100, 32);
+        atualizaDados.setBounds(560, 320, 110, 32);
+
+        jPanel1.setLayout(new java.awt.BorderLayout());
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(420, 10, 390, 310);
         getContentPane().add(fundo);
         fundo.setBounds(0, 0, 1230, 670);
 
-        setSize(new java.awt.Dimension(1228, 666));
+        setSize(new java.awt.Dimension(1228, 676));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -232,6 +247,24 @@ public class Leituras extends javax.swing.JFrame {
         model.setNumRows(0);
         showLeituras();
     }//GEN-LAST:event_atualizaDadosActionPerformed
+
+    public void iniciaGrafico() {
+        JFreeChart grafico = ChartFactory.createPieChart3D(
+                "Gráfico de uso de Disco",
+                dataset,
+                true,
+                true,
+                false);
+
+        PiePlot3D plot = (PiePlot3D) grafico.getPlot();
+        plot.setForegroundAlpha(0.7f);
+        plot.setStartAngle(0);
+        plot.setDirection(Rotation.CLOCKWISE);
+        ChartPanel painelGrafico = new ChartPanel(grafico);
+        jPanel1.removeAll();
+        jPanel1.add(painelGrafico, BorderLayout.CENTER);
+        jPanel1.validate();
+    }
 
     /**
      * @param args the command line arguments
@@ -279,6 +312,7 @@ public class Leituras extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;

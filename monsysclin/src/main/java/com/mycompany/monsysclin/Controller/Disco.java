@@ -31,10 +31,26 @@ public class Disco {
         return String.format("%.2f", porc);
     }
 
+    public String nomeDisco() {
+        return fileStores.get(0).getName();
+    }
+
     public Double usoDiscoPorc() {
         Double uso = (fileStores.get(0).getTotalSpace() / Math.pow(10, 9) - fileStores.get(0).getFreeSpace() / Math.pow(10, 9));
-        Double porc = (uso * 100)/(fileStores.get(0).getTotalSpace()/ Math.pow(10, 9)); 
+        Double porc = (uso * 100) / (fileStores.get(0).getTotalSpace() / Math.pow(10, 9));
         return porc;
+    }
+
+    public Double livreDiscoPorc() {
+        return (fileStores.get(0).getFreeSpace() / Math.pow(10, 9) * 100) / (fileStores.get(0).getTotalSpace() / Math.pow(10, 9));
+    }
+
+    public Double uso() {
+        return (fileStores.get(0).getTotalSpace() / Math.pow(10, 9) - fileStores.get(0).getFreeSpace() / Math.pow(10, 9));
+    }
+
+    public Double livre() {
+        return fileStores.get(0).getFreeSpace() / Math.pow(10, 9);
     }
 
     public List espacofree() {
