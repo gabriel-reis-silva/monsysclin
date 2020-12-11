@@ -53,9 +53,9 @@ public class Inserts {
         }
     }
 
-    public void insereUsuarioMaquina() {
-        if (true) {
-            System.out.println("Da pra associar");
+    public void insereUsuarioMaquina(Integer idUsuario) {
+        if (!login.checaUsuarioMaquina(idUsuario)) {
+            System.out.println("Da pra associar " +idUsuario);
 
             try (Connection connection = DriverManager.getConnection(connectionUrl)) {
                 PreparedStatement stmt = connection.prepareStatement("INSERT INTO usuarioMaquina "

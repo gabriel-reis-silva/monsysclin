@@ -23,10 +23,10 @@ public class Selects {
     private Integer idMaquina;
     private Integer idUsuarioMaquina;
     private Boolean checaMaquina;
-
-    public Boolean checaMaquina() {
-        Conexao conexao = new Conexao();
+    private Boolean checaUsuarioMaquina;
+Conexao conexao = new Conexao();
         Machine maquina = new Machine();
+    public Boolean checaMaquina() {
         try {
             maquina.numeroSerie();
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
@@ -53,8 +53,6 @@ public class Selects {
     }
 
     public Integer pegaIdMaquina() {
-        Conexao conexao = new Conexao();
-        Machine maquina = new Machine();
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection conn = DriverManager.getConnection(conexao.getStringUrl());
@@ -75,6 +73,7 @@ public class Selects {
         return idMaquina;
     }
 
+   
     public Integer getIdMaquina() {
         return idMaquina;
     }

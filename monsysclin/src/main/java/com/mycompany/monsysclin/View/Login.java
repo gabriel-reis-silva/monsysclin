@@ -25,6 +25,16 @@ import javax.swing.JOptionPane;
  */
 public class Login extends javax.swing.JFrame {
 
+    private String emailUser;
+    private String senhaUser;
+    private String userValido1;
+    private String senhaValida;
+    private Integer idUsuario;
+    private Boolean checaUsuarioMaquina;
+
+    Selects selects = new Selects();
+    Conexao conexao = new Conexao();
+
     /**
      * Creates new form Login
      */
@@ -32,15 +42,6 @@ public class Login extends javax.swing.JFrame {
         initComponents();
         fundo.setIcon(new ImageIcon(new javax.swing.ImageIcon(getClass().getResource("/login.png")).getImage().getScaledInstance(450, 300, Image.SCALE_SMOOTH)));
     }
-    private String emailUser;
-    private String senhaUser;
-    private String userValido1;
-    private String senhaValida;
-    private Integer idUsuario, id2;
-    private Boolean checaUsuarioMaquina;
-
-    Selects selects = new Selects();
-    Conexao conexao = new Conexao();
 
     public Integer valida() {
         emailUser = jTextField1.getText();
@@ -58,27 +59,21 @@ public class Login extends javax.swing.JFrame {
                 userValido1 = rs.getString(3);
                 senhaValida = rs.getString(4);
             }
-            executaValida();
+            executaValida(idUsuario);
 
         } catch (Exception e) {
-//            JOptionPane.showMessageDialog(null, e);
             JOptionPane.showMessageDialog(null, "Credenciais incorretas", "Erro", JOptionPane.ERROR_MESSAGE);
         }
         return idUsuario;
     }
 
-    public String getUserValido1() {
-        return userValido1;
-    }
 
-    public void executaValida() {
-//        id2 = idUsuario;
+    public void executaValida(Integer idUsuario) {
+        Inserts inserts = new Inserts();
         if (userValido1.equals(emailUser) && senhaValida.equals(senhaUser)) {
             JOptionPane.showMessageDialog(null, "Credenciais corretas");
-
-            Inserts inserts = new Inserts();
             inserts.insereMaquina();
-            inserts.insereUsuarioMaquina();
+            inserts.insereUsuarioMaquina(idUsuario);
             inserts.insereDados();
             new Leituras().setVisible(true);
             this.dispose();
@@ -87,12 +82,13 @@ public class Login extends javax.swing.JFrame {
         }
     }
 
-    public Boolean checaUsuarioMaquina() {
 
+    public Boolean checaUsuarioMaquina(Integer idUsuario) {
+        System.out.println("id é... " + idUsuario);
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection conn = DriverManager.getConnection(conexao.getStringUrl());
-            String query1 = "SELECT * FROM usuarioMaquina WHERE fkusuario='" + id2 + "' AND fkmaquina='" + selects.pegaIdMaquina() + "';";
+            String query1 = "SELECT * FROM usuarioMaquina WHERE fkusuario='" + idUsuario + "' AND fkmaquina='" + selects.pegaIdMaquina() + "';";
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query1);
             UsuarioMaquina usuariomaquina = null;
