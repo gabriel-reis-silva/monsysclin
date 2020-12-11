@@ -39,7 +39,6 @@ public class Machine {
                 System.err.println("Linux Motherboard Exp : " + ex.getMessage());
                 sNum = null;
             }
-            System.out.println("SO: LINUX" + sNum);
             numeroSerie = sNum;
             return sNum;
         }   

@@ -93,7 +93,7 @@ public class SplashScreen extends javax.swing.JFrame {
         jProgressBar1.setForeground(new java.awt.Color(0, 0, 153));
         jProgressBar1.setStringPainted(true);
         jPanel1.add(jProgressBar1);
-        jProgressBar1.setBounds(10, 172, 570, 20);
+        jProgressBar1.setBounds(7, 170, 572, 20);
         jPanel1.add(fundo);
         fundo.setBounds(0, 0, 590, 200);
 
