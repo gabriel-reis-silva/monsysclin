@@ -28,7 +28,7 @@ public class Inserts {
     Conexao conexao = new Conexao();
     Selects maquina = new Selects();
     Machine machine = new Machine();
-    Processos processos = new Processos();
+    Processo processos = new Processo();
     String connectionUrl = conexao.getStringUrl();
 
     public void insereMaquina() {

@@ -117,9 +117,9 @@ public class TelaNet extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Network net = new Network();
-        net.capturaNet();
-        txtaCPU.setText(net.capturaNet());
+//        Network net = new Network();
+//        net.capturaNet();
+//        txtaCPU.setText(net.capturaNet());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed

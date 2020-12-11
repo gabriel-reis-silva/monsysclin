@@ -142,13 +142,13 @@ public class Tela01 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Integer intValue = ((int) cpu.cpuUsage());
-        Integer intMemo = memoria.capturaPorc().intValue();
-        String result = (cpu.cpuInfo().toString());
-        txtaCPU.setText(result);
-        pbarCPU.setValue(intValue);
-        pbarMemo.setValue(intMemo);
-        lblMemoria.setText(memoria.capturaMemoria());
+//        Integer intValue = ((int) cpu.cpuUsage());
+//        Integer intMemo = memoria.capturaPorc().intValue();
+//        String result = (cpu.cpuInfo().toString());
+//        txtaCPU.setText(result);
+//        pbarCPU.setValue(intValue);
+//        pbarMemo.setValue(intMemo);
+//        lblMemoria.setText(memoria.capturaMemoria());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed

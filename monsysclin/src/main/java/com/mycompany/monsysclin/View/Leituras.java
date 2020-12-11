@@ -7,13 +7,19 @@ package com.mycompany.monsysclin.View;
 
 import com.mycompany.monsysclin.Controller.*;
 import com.mycompany.monsysclin.Model.Leitura;
+import com.mycompany.monsysclin.Model.Processes;
 import java.awt.BorderLayout;
 import java.awt.Image;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 import javax.swing.ImageIcon;
@@ -25,6 +31,9 @@ import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PiePlot3D;
 import org.jfree.chart.util.Rotation;
 import org.jfree.data.general.DefaultPieDataset;
+import oshi.SystemInfo;
+import oshi.software.os.OSProcess;
+import oshi.software.os.OperatingSystem;
 
 /**
  *
@@ -36,46 +45,52 @@ public class Leituras extends javax.swing.JFrame {
     Memoria memoria = new Memoria();
     Disco disco = new Disco();
     DefaultPieDataset dataset = new DefaultPieDataset();
+    Processo pro = new Processo();
 
     public Leituras() {
         initComponents();
         fundo.setIcon(new ImageIcon(new javax.swing.ImageIcon(getClass().getResource("/fundo5.png")).getImage().getScaledInstance(1228, 666, Image.SCALE_SMOOTH)));
-        showLeituras();
+        pro.insereProcessos();
+        showProcesses();
+        pro.insereProcessos();
         txtArea.setText(cpu.cpuInfo().toString());
         atualizaBarras();
         iniciaGrafico();
     }
 
-    public ArrayList<Leitura> leituraList() {
-        ArrayList<Leitura> leituraList = new ArrayList<>();
+    public ArrayList<Processes> processesList() {
+        ArrayList<Processes> processList = new ArrayList<>();
         Conexao conexao = new Conexao();
         Machine maquina = new Machine();
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection conn = DriverManager.getConnection(conexao.getStringUrl());
-            String query1 = "select idLeitura, cpuLeitura, memoriaLeitura, bytesRecebidos,bytesEnviados, disco, fkMaquina, datahoraLeitura"
-                    + " from leitura INNER JOIN maquina on idMaquina = fkMaquina WHERE serialNumber = '"
-                    + maquina.numeroSerie() + "'";
+
+            String query1 = "select idProcess, idGroupProcess, nomeProcess, usoCpu, usoMemoria, dataHoraProcesso, fkMaquina"
+                    + " from processo INNER JOIN maquina on idMaquina = fkMaquina WHERE serialNumber = '"
+                    + maquina.numeroSerie() + "'" + " order by usoMemoria desc;";
+
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query1);
-            Leitura leitura;
+            Processes processos;
+
             while (rs.next()) {
-                leitura = new Leitura(rs.getInt("idLeitura"),
-                        rs.getInt("fkMaquina"),
-                        rs.getString("cpuLeitura"),
-                        rs.getString("memoriaLeitura"),
-                        rs.getString("bytesRecebidos"),
-                        rs.getString("bytesEnviados"),
-                        rs.getString("disco"),
-                        rs.getString("datahoraLeitura"));
-                leituraList.add(leitura);
+                processos = new Processes(
+                        rs.getInt("idProcess"),
+                        rs.getInt("idGroupProcess"),
+                        rs.getString("nomeprocess"),
+                        rs.getString("usoCpu"),
+                        rs.getInt("usoMemoria"),
+                        rs.getString("dataHoraProcesso"),
+                        rs.getInt("fkMaquina"));
+                processList.add(processos);
             }
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
 
-        return leituraList;
+        return processList;
     }
 
     public void atualizaBarras() {
@@ -94,29 +109,48 @@ public class Leituras extends javax.swing.JFrame {
             }
         }, 5000, 5000);
     }
+    private transient Map<Integer, OSProcess> priorSnapshotMap = new HashMap<>();
 
-    public void showLeituras() {
+    public void showProcesses() {
 //        Timer timer = new Timer();
 //        timer.scheduleAtFixedRate(new TimerTask() {
 //            @Override
 //            public void run() {
-        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
 //                model.setNumRows(0);
-        ArrayList<Leitura> list = leituraList();
-        Object[] row = new Object[8];
+//        ArrayList<Processes> list = processesList();
+        SystemInfo si = new SystemInfo();
+        OperatingSystem os = si.getOperatingSystem();
 
-        for (int i = 0; i < list.size(); i++) {
-            row[0] = list.get(i).getIdLeitura();
-            row[1] = list.get(i).getCpuLeitura();
-            row[2] = list.get(i).getMemoriaLeitura();
-            row[3] = list.get(i).getBytesRecebidos();
-            row[4] = list.get(i).getBytesEnviados();
-            row[5] = list.get(i).getDisco();
-            row[6] = list.get(i).getFkMaquina();
-            row[7] = list.get(i).getDatahoraLeitura();
+        int cpuCount = si.getHardware().getProcessor().getLogicalProcessorCount();
+
+        List<OSProcess> procs = os.getProcesses(os.getProcessCount(), OperatingSystem.ProcessSort.CPU);
+
+        String timeStamp = new SimpleDateFormat("dd/MM/yyyy HH:m:ss").format(new Date());
+
+        Object[] row = new Object[6];
+
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+
+        for (int i = 1; i < procs.size(); i++) {
+            row[0] = procs.get(i).getProcessID();
+            row[1] = procs.get(i).getParentProcessID();
+            row[2] = procs.get(i).getName();
+            row[3] = String.format("%.1f", procs.get(i).getProcessCpuLoadBetweenTicks(priorSnapshotMap.get(procs)) / cpuCount * 100d) + "%";
+            row[4] = procs.get(i).getResidentSetSize() / 1048576 + " mb";
+            row[5] = timeStamp;
             model.addRow(row);
         }
 
+//        for (int i = 0; i < list.size(); i++) {
+//            row[0] = list.get(i).getIdProcesso();
+//            row[1] = list.get(i).getIdGrupoProcesso();
+//            row[2] = list.get(i).getNomeProcesso();
+//            row[3] = list.get(i).getUsoCpu();
+//            row[4] = list.get(i).getUsoMemoria();
+//            row[5] = list.get(i).getFkMaquina();
+//            row[6] = list.get(i).getDataHoraProcesso();
+//            model.addRow(row);
+//        }
 //            }
 //        }, 5000, 5000);
     }
@@ -154,11 +188,11 @@ public class Leituras extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "CPU", "Memória", "Bytes Recebidos", "Bytes Enviados", "Disco", "Maquina ID", "Data Leitura"
+                "ID", "ID Group", "Nome do processo", "Uso CPU ", "Uso memória", "Data e Hora"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false
+                false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -167,9 +201,6 @@ public class Leituras extends javax.swing.JFrame {
         });
         jTable1.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(7).setResizable(false);
-        }
 
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(15, 356, 1200, 310);
@@ -243,9 +274,15 @@ public class Leituras extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSairActionPerformed
 
     private void atualizaDadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atualizaDadosActionPerformed
-        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.setNumRows(0);
-        showLeituras();
+//        Timer timer = new Timer();
+//        timer.scheduleAtFixedRate(new TimerTask() {
+//            @Override
+//            public void run() {
+                DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+                model.setNumRows(0);
+                showProcesses();
+//            }
+//        }, 5000, 5000);
     }//GEN-LAST:event_atualizaDadosActionPerformed
 
     public void iniciaGrafico() {
