@@ -7,7 +7,10 @@ package com.mycompany.monsysclin.View;
 
 import com.mycompany.monsysclin.Controller.Conexao;
 import com.mycompany.monsysclin.Controller.Inserts;
+import com.mycompany.monsysclin.Controller.Machine;
+import com.mycompany.monsysclin.Model.Selects;
 import com.mycompany.monsysclin.Model.Usuario;
+import com.mycompany.monsysclin.Model.UsuarioMaquina;
 import java.awt.Image;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -15,7 +18,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
-
 
 /**
  *
@@ -34,10 +36,13 @@ public class Login extends javax.swing.JFrame {
     private String senhaUser;
     private String userValido1;
     private String senhaValida;
-    
+    private Integer idUsuario, id2;
+    private Boolean checaUsuarioMaquina;
 
-    public String valida() {
-        Conexao conexao = new Conexao();
+    Selects selects = new Selects();
+    Conexao conexao = new Conexao();
+
+    public Integer valida() {
         emailUser = jTextField1.getText();
         senhaUser = jPasswordField1.getText();
         try {
@@ -49,33 +54,62 @@ public class Login extends javax.swing.JFrame {
             Usuario user;
             while (rs.next()) {
                 user = new Usuario(rs.getInt("idUsuario"), rs.getInt("tipo_usuario"), rs.getString("nomeUsuario"), rs.getString("emailUsuario"), rs.getString("senhaUsuario"));
+                idUsuario = rs.getInt(1);
                 userValido1 = rs.getString(3);
                 senhaValida = rs.getString(4);
             }
-
             executaValida();
 
         } catch (Exception e) {
 //            JOptionPane.showMessageDialog(null, e);
             JOptionPane.showMessageDialog(null, "Credenciais incorretas", "Erro", JOptionPane.ERROR_MESSAGE);
         }
+        return idUsuario;
+    }
 
+    public String getUserValido1() {
         return userValido1;
     }
 
     public void executaValida() {
-
+//        id2 = idUsuario;
         if (userValido1.equals(emailUser) && senhaValida.equals(senhaUser)) {
             JOptionPane.showMessageDialog(null, "Credenciais corretas");
 
             Inserts inserts = new Inserts();
             inserts.insereMaquina();
+            inserts.insereUsuarioMaquina();
             inserts.insereDados();
             new Leituras().setVisible(true);
             this.dispose();
         } else {
             JOptionPane.showMessageDialog(null, "Credenciais incorretas", "Erro", JOptionPane.ERROR_MESSAGE);
         }
+    }
+
+    public Boolean checaUsuarioMaquina() {
+
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection conn = DriverManager.getConnection(conexao.getStringUrl());
+            String query1 = "SELECT * FROM usuarioMaquina WHERE fkusuario='" + id2 + "' AND fkmaquina='" + selects.pegaIdMaquina() + "';";
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(query1);
+            UsuarioMaquina usuariomaquina = null;
+            while (rs.next()) {
+                usuariomaquina = new UsuarioMaquina(rs.getInt("idUsuarioMaquina"),
+                        rs.getInt("fkusuario"),
+                        rs.getInt("fkmaquina"));
+            }
+            if (usuariomaquina == null) {
+                checaUsuarioMaquina = false;
+            } else {
+                checaUsuarioMaquina = true;
+            }
+        } catch (Exception e) {
+            System.out.println("ERRO ao buscar na tabela associativa: " + e + "  " + idUsuario + " " + selects.pegaIdMaquina());
+        }
+        return checaUsuarioMaquina;
     }
 
     /**
@@ -160,6 +194,10 @@ public class Login extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_btnSairActionPerformed
 
+    public Integer getIdUsuario() {
+        return idUsuario;
+    }
+
     /**
      * @param args the command line arguments
      */
@@ -190,7 +228,7 @@ public class Login extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);                
+                new Login().setVisible(true);
             }
         });
     }

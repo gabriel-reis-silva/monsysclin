@@ -4,6 +4,7 @@ com\mycompany\monsysclin\View\Leituras$5.class
 com\mycompany\monsysclin\View\Tela01.class
 com\mycompany\monsysclin\Controller\Machine.class
 com\mycompany\monsysclin\View\SplashScreen$1.class
+com\mycompany\monsysclin\Controller\Processos.class
 com\mycompany\monsysclin\View\Tela01$3.class
 com\mycompany\monsysclin\View\Menu$3.class
 com\mycompany\monsysclin\Controller\Memoria.class
@@ -29,6 +30,7 @@ com\mycompany\monsysclin\Controller\Conexao.class
 com\mycompany\monsysclin\View\TelaNet$3.class
 com\mycompany\monsysclin\Controller\Disco.class
 com\mycompany\monsysclin\View\Menu$1.class
+com\mycompany\monsysclin\Controller\GraficoDisco.class
 com\mycompany\monsysclin\Controller\Inserts$1.class
 com\mycompany\monsysclin\View\Processos$1.class
 com\mycompany\monsysclin\View\Tela01$4.class

@@ -6,6 +6,7 @@
 package com.mycompany.monsysclin.Controller;
 
 import com.mycompany.monsysclin.Model.Selects;
+import com.mycompany.monsysclin.View.Login;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
@@ -21,6 +22,7 @@ import javax.swing.JOptionPane;
  */
 public class Inserts {
 
+    Login login = new Login();
     Cpu cpu = new Cpu();
     Memoria memoria = new Memoria();
     Network adaptador0 = new Network();
@@ -48,6 +50,25 @@ public class Inserts {
 
         } else {
             System.out.println("Maquina já inserida. Ja foi fio");
+        }
+    }
+
+    public void insereUsuarioMaquina() {
+        if (true) {
+            System.out.println("Da pra associar");
+
+            try (Connection connection = DriverManager.getConnection(connectionUrl)) {
+                PreparedStatement stmt = connection.prepareStatement("INSERT INTO usuarioMaquina "
+                        + "(fkusuario, fkmaquina) values (?, ?);");
+                stmt.setInt(1, 5);
+                stmt.setInt(2, 1);
+                stmt.executeUpdate();   
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, "Erro no insert da usuarioMaquina" + e);
+            }
+
+        } else {
+            System.out.println("Maquina já associada. Ja foi fio");
         }
     }
 
