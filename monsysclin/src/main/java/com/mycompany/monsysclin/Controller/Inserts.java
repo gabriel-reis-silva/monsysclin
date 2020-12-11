@@ -54,14 +54,14 @@ public class Inserts {
     }
 
     public void insereUsuarioMaquina(Integer idUsuario) {
-        if (!login.checaUsuarioMaquina(idUsuario)) {
+        if (!maquina.checaUsuarioMaquina(idUsuario)) {
             System.out.println("Da pra associar " +idUsuario);
 
             try (Connection connection = DriverManager.getConnection(connectionUrl)) {
                 PreparedStatement stmt = connection.prepareStatement("INSERT INTO usuarioMaquina "
                         + "(fkusuario, fkmaquina) values (?, ?);");
-                stmt.setInt(1, 5);
-                stmt.setInt(2, 1);
+                stmt.setInt(1, idUsuario);
+                stmt.setInt(2, maquina.getIdMaquina());
                 stmt.executeUpdate();   
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "Erro no insert da usuarioMaquina" + e);

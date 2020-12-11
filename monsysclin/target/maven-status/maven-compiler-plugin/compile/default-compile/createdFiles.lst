@@ -47,6 +47,7 @@ com\mycompany\monsysclin\View\SplashScreen$2.class
 com\mycompany\monsysclin\View\Login$3.class
 com\mycompany\monsysclin\View\TelaNet$4.class
 com\mycompany\monsysclin\View\TelaNet.class
+com\mycompany\monsysclin\Model\UsuarioMaquina.class
 com\mycompany\monsysclin\View\Menu$4.class
 com\mycompany\monsysclin\View\Leituras.class
 com\mycompany\monsysclin\Model\Leitura.class

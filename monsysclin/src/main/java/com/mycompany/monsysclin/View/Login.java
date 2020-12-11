@@ -67,7 +67,6 @@ public class Login extends javax.swing.JFrame {
         return idUsuario;
     }
 
-
     public void executaValida(Integer idUsuario) {
         Inserts inserts = new Inserts();
         if (userValido1.equals(emailUser) && senhaValida.equals(senhaUser)) {
@@ -80,32 +79,6 @@ public class Login extends javax.swing.JFrame {
         } else {
             JOptionPane.showMessageDialog(null, "Credenciais incorretas", "Erro", JOptionPane.ERROR_MESSAGE);
         }
-    }
-
-
-    public Boolean checaUsuarioMaquina(Integer idUsuario) {
-        System.out.println("id é... " + idUsuario);
-        try {
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection conn = DriverManager.getConnection(conexao.getStringUrl());
-            String query1 = "SELECT * FROM usuarioMaquina WHERE fkusuario='" + idUsuario + "' AND fkmaquina='" + selects.pegaIdMaquina() + "';";
-            Statement st = conn.createStatement();
-            ResultSet rs = st.executeQuery(query1);
-            UsuarioMaquina usuariomaquina = null;
-            while (rs.next()) {
-                usuariomaquina = new UsuarioMaquina(rs.getInt("idUsuarioMaquina"),
-                        rs.getInt("fkusuario"),
-                        rs.getInt("fkmaquina"));
-            }
-            if (usuariomaquina == null) {
-                checaUsuarioMaquina = false;
-            } else {
-                checaUsuarioMaquina = true;
-            }
-        } catch (Exception e) {
-            System.out.println("ERRO ao buscar na tabela associativa: " + e + "  " + idUsuario + " " + selects.pegaIdMaquina());
-        }
-        return checaUsuarioMaquina;
     }
 
     /**

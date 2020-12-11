@@ -6,7 +6,6 @@
 package com.mycompany.monsysclin.View;
 
 import com.mycompany.monsysclin.Controller.*;
-import com.mycompany.monsysclin.Model.Leitura;
 import com.mycompany.monsysclin.Model.Processes;
 import java.awt.BorderLayout;
 import java.awt.Image;
@@ -65,7 +64,6 @@ public class Leituras extends javax.swing.JFrame {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection conn = DriverManager.getConnection(conexao.getStringUrl());
-
             String query1 = "select idProcess, idGroupProcess, nomeProcess, usoCpu, usoMemoria, dataHoraProcesso, fkMaquina"
                     + " from processo INNER JOIN maquina on idMaquina = fkMaquina WHERE serialNumber = '"
                     + maquina.numeroSerie() + "'" + " order by usoMemoria desc;";
@@ -73,7 +71,6 @@ public class Leituras extends javax.swing.JFrame {
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query1);
             Processes processos;
-
             while (rs.next()) {
                 processos = new Processes(
                         rs.getInt("idProcess"),
@@ -278,9 +275,9 @@ public class Leituras extends javax.swing.JFrame {
 //        timer.scheduleAtFixedRate(new TimerTask() {
 //            @Override
 //            public void run() {
-                DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-                model.setNumRows(0);
-                showProcesses();
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.setNumRows(0);
+        showProcesses();
 //            }
 //        }, 5000, 5000);
     }//GEN-LAST:event_atualizaDadosActionPerformed
