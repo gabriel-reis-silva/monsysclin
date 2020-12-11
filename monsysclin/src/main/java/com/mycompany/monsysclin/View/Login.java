@@ -7,10 +7,8 @@ package com.mycompany.monsysclin.View;
 
 import com.mycompany.monsysclin.Controller.Conexao;
 import com.mycompany.monsysclin.Controller.Inserts;
-import com.mycompany.monsysclin.Controller.Machine;
 import com.mycompany.monsysclin.Model.Selects;
 import com.mycompany.monsysclin.Model.Usuario;
-import com.mycompany.monsysclin.Model.UsuarioMaquina;
 import java.awt.Image;
 import java.sql.Connection;
 import java.sql.DriverManager;

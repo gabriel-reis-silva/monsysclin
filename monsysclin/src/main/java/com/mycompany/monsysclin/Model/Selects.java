@@ -79,7 +79,7 @@ public class Selects {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection conn = DriverManager.getConnection(conexao.getStringUrl());
-            String query1 = "SELECT * FROM usuarioMaquina WHERE fkusuario='" + idUsuario + "' AND fkmaquina='" + pegaIdMaquina() + "';";
+            String query1 = "SELECT * FROM usuarioMaquina WHERE fkmaquina='" + pegaIdMaquina() + "';";
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query1);
             UsuarioMaquina usuariomaquina = null;
