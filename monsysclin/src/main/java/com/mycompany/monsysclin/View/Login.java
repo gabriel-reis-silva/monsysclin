@@ -5,14 +5,17 @@
  */
 package com.mycompany.monsysclin.View;
 
-import com.mycompany.monsysclin.Controller.Disco;
+import com.mycompany.monsysclin.Controller.Conexao;
 import com.mycompany.monsysclin.Controller.Inserts;
 import com.mycompany.monsysclin.Model.Usuario;
+import java.awt.Image;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -25,27 +28,21 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
+        fundo.setIcon(new ImageIcon(new javax.swing.ImageIcon(getClass().getResource("/login.png")).getImage().getScaledInstance(450, 300, Image.SCALE_SMOOTH)));
     }
     private String emailUser;
     private String senhaUser;
     private String userValido1;
     private String senhaValida;
+    
 
     public String valida() {
+        Conexao conexao = new Conexao();
         emailUser = jTextField1.getText();
         senhaUser = jPasswordField1.getText();
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            String url = ("jdbc:sqlserver:"
-                    + "//monsysclin.database.windows.net:1433;"
-                    + "database=Monsysclin;"
-                    + "user=administrador@monsysclin;"
-                    + "password={#Gfgrupo6};"
-                    + "encrypt=true;"
-                    + "trustServerCertificate=false;"
-                    + "hostNameInCertificate=*.database.windows.net;"
-                    + "loginTimeout=30;");
-            Connection conn = DriverManager.getConnection(url);
+            Connection conn = DriverManager.getConnection(conexao.getStringUrl());
             String query1 = "SELECT * FROM usuario where emailUsuario = '" + emailUser + "' and senhaUsuario = '" + senhaUser + "'";
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query1);
@@ -72,8 +69,8 @@ public class Login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Credenciais corretas");
 
             Inserts inserts = new Inserts();
+            inserts.insereMaquina();
             inserts.insereDados();
-            Disco disco = new Disco();
             new Leituras().setVisible(true);
             this.dispose();
         } else {
@@ -92,81 +89,76 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        btnLogar = new javax.swing.JButton();
+        email = new javax.swing.JLabel();
+        senha = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
+        btnSair = new javax.swing.JButton();
+        fundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
         setUndecorated(true);
         setResizable(false);
+        getContentPane().setLayout(null);
 
-        jButton1.setText("Logar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jPanel1.setLayout(null);
+        jPanel1.add(jTextField1);
+        jTextField1.setBounds(160, 120, 140, 24);
+
+        btnLogar.setText("Logar");
+        btnLogar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnLogarActionPerformed(evt);
             }
         });
+        jPanel1.add(btnLogar);
+        btnLogar.setBounds(175, 260, 100, 32);
 
-        jLabel1.setText("Login");
+        email.setBackground(new java.awt.Color(255, 255, 255));
+        email.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        email.setForeground(new java.awt.Color(255, 255, 255));
+        email.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        email.setText("Login");
+        jPanel1.add(email);
+        email.setBounds(90, 122, 60, 15);
 
-        jLabel2.setText("Senha");
+        senha.setBackground(new java.awt.Color(255, 255, 255));
+        senha.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        senha.setForeground(new java.awt.Color(255, 255, 255));
+        senha.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        senha.setText("Senha");
+        jPanel1.add(senha);
+        senha.setBounds(90, 170, 60, 15);
+        jPanel1.add(jPasswordField1);
+        jPasswordField1.setBounds(160, 170, 140, 22);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(137, 137, 137)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-                    .addComponent(jTextField1)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(11, 11, 11)
-                        .addComponent(jButton1)))
-                .addContainerGap(85, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(108, 108, 108)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addContainerGap())
-        );
+        btnSair.setBackground(new java.awt.Color(255, 0, 0));
+        btnSair.setText("X");
+        btnSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSairActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnSair);
+        btnSair.setBounds(380, 0, 70, 25);
+        jPanel1.add(fundo);
+        fundo.setBounds(0, 0, 450, 300);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 56, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 450, 300);
 
         setSize(new java.awt.Dimension(450, 300));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnLogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogarActionPerformed
         valida();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnLogarActionPerformed
+
+    private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnSairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -198,17 +190,19 @@ public class Login extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
+                new Login().setVisible(true);                
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton btnLogar;
+    private javax.swing.JButton btnSair;
+    private javax.swing.JLabel email;
+    private javax.swing.JLabel fundo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel senha;
     // End of variables declaration//GEN-END:variables
 }

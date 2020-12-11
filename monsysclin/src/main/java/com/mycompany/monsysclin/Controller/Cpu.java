@@ -15,13 +15,14 @@ public class Cpu {
         return cpu;
     }
 
-    public double cpuUsage() {
+    public Double cpuUsage() {
         double d = cpu.getSystemCpuLoadBetweenTicks(oldTicks);
         return (100d * d);
     }
-
+    
     @Override
     public String toString() {
+        System.out.println(String.format("Uso CPU %.2f", cpu.getSystemCpuLoadBetweenTicks(oldTicks) * 100d));
         return String.format("%.2f", cpu.getSystemCpuLoadBetweenTicks(oldTicks) * 100d);
     }
 

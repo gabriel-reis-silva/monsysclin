@@ -5,14 +5,15 @@
  */
 package com.mycompany.monsysclin.Controller;
 
-import com.mycompany.monsysclin.View.Leituras;
+import com.mycompany.monsysclin.Model.Selects;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 import javax.swing.JOptionPane;
-import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
  *
@@ -24,38 +25,56 @@ public class Inserts {
     Memoria memoria = new Memoria();
     Network adaptador0 = new Network();
     Disco disco = new Disco();
+    Conexao conexao = new Conexao();
+    Selects maquina = new Selects();
+    Machine machine = new Machine();
+    Processos processos = new Processos();
+    String connectionUrl = conexao.getStringUrl();
 
-    String connectionUrl
-            = "jdbc:sqlserver://monsysclin.database.windows.net:1433;"
-            + "database=Monsysclin;user=administrador@monsysclin;"
-            + "password=#Gfgrupo6;encrypt=true;"
-            + "trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30";
+    public void insereMaquina() {
+        if (!maquina.checaMaquina()) {
+            System.out.println("Da pra inserir");
+
+            try (Connection connection = DriverManager.getConnection(connectionUrl)) {
+                PreparedStatement stmt = connection.prepareStatement("INSERT INTO maquina "
+                        + "(nomeMaquina, modeloMaquina, serialNumber) values (?, ?, ?);");
+                stmt.setString(1, machine.getHostname());
+                stmt.setString(2, machine.modeloMaquina());
+                stmt.setString(3, machine.numeroSerie());
+                stmt.executeUpdate();
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+
+        } else {
+            System.out.println("Maquina já inserida. Ja foi fio");
+        }
+    }
 
     public void insereDados() {
 
         Timer timer = new Timer();
-
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                try (Connection connection = DriverManager.getConnection(connectionUrl);) {
+                String timeStamp = new SimpleDateFormat("dd/MM/yyyy HH:m:ss").format(new Date());
 
-                    PreparedStatement stmt = connection.prepareStatement("INSERT INTO leitura "
-                            + "(cpuLeitura, memoriaLeitura, bytesRecebidos, bytesEnviados, disco, fkMaquina, datahoraLeitura ) values (?, ?, ?, ?, ?, ?, ?)");
-                    stmt.setString(1, cpu.toString());
-                    stmt.setDouble(2, memoria.getUso());
-                    stmt.setLong(3, adaptador0.bytesRecebidos());
-                    stmt.setLong(4, adaptador0.bytesEnviados());
-                    stmt.setString(5, disco.espacofree().toString());
-                    stmt.setInt(6, 15);
-                    stmt.setString(7, "2020-12-03 15:49:50");
+                try (Connection connection = DriverManager.getConnection(connectionUrl);) {
+                    PreparedStatement stmt = connection.prepareStatement("EXEC insertLeitura ?,?,?,?,?,?,?;");
+                    stmt.setString(1, machine.numeroSerie());
+                    stmt.setString(2, cpu.toString());
+                    stmt.setDouble(3, memoria.getUso());
+                    stmt.setLong(4, adaptador0.bytesRecebidos());
+                    stmt.setLong(5, adaptador0.bytesEnviados());
+                    stmt.setString(6, disco.usodisco());
+                    stmt.setString(7, timeStamp);
                     stmt.executeUpdate();
                 } catch (Exception e) {
                     JOptionPane.showMessageDialog(null, e);
                 }
 
             }
-        }, 2000, 2000);
+        }, 5000, 5000);
 
     }
 
