@@ -104,7 +104,7 @@ public class Leituras extends javax.swing.JFrame {
                 jLabel1.setText("Uso de Disco: " + pbarDisco.getValue() + "%");
                 if (pbarCpu.getValue() <= 69) {
                     pbarCpu.setForeground(Color.green);
-                } else if (pbarCpu.getValue() >= 70) {
+                } else if (pbarCpu.getValue() <= 89) {
                     pbarCpu.setForeground(Color.yellow);
                 } else if (pbarCpu.getValue() >= 90) {
                     pbarCpu.setForeground(Color.red);
@@ -120,7 +120,7 @@ public class Leituras extends javax.swing.JFrame {
 
                 if (pbarDisco.getValue() <= 69) {
                     pbarDisco.setForeground(Color.green);
-                } else if (pbarDisco.getValue() >= 70) {
+                } else if (pbarDisco.getValue() <= 89) {
                     pbarDisco.setForeground(Color.yellow);
                 } else if (pbarDisco.getValue() >= 90) {
                     pbarDisco.setForeground(Color.red);
