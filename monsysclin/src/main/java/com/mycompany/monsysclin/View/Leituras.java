@@ -8,6 +8,7 @@ package com.mycompany.monsysclin.View;
 import com.mycompany.monsysclin.Controller.*;
 import com.mycompany.monsysclin.Model.Processes;
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Image;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -98,7 +99,32 @@ public class Leituras extends javax.swing.JFrame {
                 pbarCpu.setValue(cpu.cpuUsage().intValue());
                 pbarMemoria.setValue(memoria.getPercentual().intValue());
                 pbarDisco.setValue(disco.usoDiscoPorc().intValue());
+                jLabel2.setText("Uso de CPU: " + pbarCpu.getValue() + "%");
+                jLabel3.setText("Uso de Memória: " + pbarMemoria.getValue() + "%");
+                jLabel1.setText("Uso de Disco: " + pbarDisco.getValue() + "%");
+                if (pbarCpu.getValue() <= 69) {
+                    pbarCpu.setForeground(Color.green);
+                } else if (pbarCpu.getValue() >= 70) {
+                    pbarCpu.setForeground(Color.yellow);
+                } else if (pbarCpu.getValue() >= 90) {
+                    pbarCpu.setForeground(Color.red);
+                }
 
+                if (pbarMemoria.getValue() <= 69) {
+                    pbarMemoria.setForeground(Color.green);
+                } else if (pbarMemoria.getValue() <= 89) {
+                    pbarMemoria.setForeground(Color.yellow);
+                } else if (pbarMemoria.getValue() >= 90) {
+                    pbarMemoria.setForeground(Color.red);
+                }
+
+                if (pbarDisco.getValue() <= 69) {
+                    pbarDisco.setForeground(Color.green);
+                } else if (pbarDisco.getValue() >= 70) {
+                    pbarDisco.setForeground(Color.yellow);
+                } else if (pbarDisco.getValue() >= 90) {
+                    pbarDisco.setForeground(Color.red);
+                }
                 dataset.setValue(disco.nomeDisco() + " Em uso: " + String.format("%.2f", disco.uso())
                         + " GB ", disco.uso());
                 dataset.setValue(disco.nomeDisco() + " Livre: " + String.format("%.2f", disco.livre())
@@ -212,19 +238,16 @@ public class Leituras extends javax.swing.JFrame {
         getContentPane().add(btnSair);
         btnSair.setBounds(1160, 0, 70, 25);
 
-        pbarDisco.setForeground(new java.awt.Color(0, 51, 255));
-        pbarDisco.setStringPainted(true);
+        pbarDisco.setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().add(pbarDisco);
         pbarDisco.setBounds(50, 200, 350, 40);
 
-        pbarCpu.setForeground(new java.awt.Color(0, 51, 255));
-        pbarCpu.setStringPainted(true);
+        pbarCpu.setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().add(pbarCpu);
         pbarCpu.setBounds(50, 62, 350, 40);
         pbarCpu.getAccessibleContext().setAccessibleDescription("");
 
-        pbarMemoria.setForeground(new java.awt.Color(0, 51, 255));
-        pbarMemoria.setStringPainted(true);
+        pbarMemoria.setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().add(pbarMemoria);
         pbarMemoria.setBounds(50, 130, 350, 40);
 
@@ -241,11 +264,11 @@ public class Leituras extends javax.swing.JFrame {
 
         jLabel2.setText("Uso de CPU:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(60, 30, 140, 16);
+        jLabel2.setBounds(60, 40, 140, 16);
 
         jLabel3.setText("Uso de Memória:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(60, 100, 140, 16);
+        jLabel3.setBounds(60, 110, 140, 16);
 
         atualizaDados.setText("Atualizar");
         atualizaDados.addActionListener(new java.awt.event.ActionListener() {
