@@ -7,8 +7,10 @@ package com.mycompany.monsysclin.View;
 
 import com.mycompany.monsysclin.Controller.Conexao;
 import com.mycompany.monsysclin.Controller.Inserts;
+import com.mycompany.monsysclin.Controller.Machine;
 import com.mycompany.monsysclin.Model.Selects;
 import com.mycompany.monsysclin.Model.Usuario;
+import com.mycompany.monsysclin.Model.UsuarioMaquina;
 import java.awt.Image;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -28,10 +30,12 @@ public class Login extends javax.swing.JFrame {
     private String userValido1;
     private String senhaValida;
     private Integer idUsuario;
+    private String emailUser1;
     private Boolean checaUsuarioMaquina;
-
+    private Boolean checaDono;
     Selects selects = new Selects();
     Conexao conexao = new Conexao();
+    Machine machine = new Machine();
 
     /**
      * Creates new form Login
@@ -57,7 +61,7 @@ public class Login extends javax.swing.JFrame {
                 userValido1 = rs.getString(3);
                 senhaValida = rs.getString(4);
             }
-            executaValida(idUsuario);
+            checaDono(idUsuario);
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Credenciais incorretas", "Erro", JOptionPane.ERROR_MESSAGE);
@@ -65,9 +69,34 @@ public class Login extends javax.swing.JFrame {
         return idUsuario;
     }
 
+    public Boolean checaDono(Integer idUsuario) {
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection conn = DriverManager.getConnection(conexao.getStringUrl());
+            String query1 = "SELECT * FROM usuarioMaquina WHERE fkusuario = '" + idUsuario + "' AND fkmaquina='" + selects.pegaIdMaquina() + "';";
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(query1);
+            UsuarioMaquina usuariomaquina1 = null;
+            while (rs.next()) {
+                usuariomaquina1 = new UsuarioMaquina(rs.getInt("idUsuarioMaquina"),
+                        rs.getInt("fkusuario"),
+                        rs.getInt("fkmaquina"));
+            }
+            if (usuariomaquina1 == null) {
+                checaDono = false;
+            } else {
+                executaValida(idUsuario);
+                checaDono = true;
+            }
+        } catch (Exception e) {
+            System.out.println("Essá máquina não é sua : " + e + "  " + idUsuario + " " + selects.pegaIdMaquina());
+        }
+        return checaDono;
+    }
+
     public void executaValida(Integer idUsuario) {
         Inserts inserts = new Inserts();
-        if (userValido1.equals(emailUser) && senhaValida.equals(senhaUser)) {
+        if (checaDono && userValido1.equals(emailUser) && senhaValida.equals(senhaUser)) {
             JOptionPane.showMessageDialog(null, "Credenciais corretas");
             inserts.insereMaquina();
             inserts.insereUsuarioMaquina(idUsuario);
