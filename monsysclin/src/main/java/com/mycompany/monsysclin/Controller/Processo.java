@@ -91,7 +91,7 @@ public class Processo {
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                String timeStamp = new SimpleDateFormat("dd/MM/yyyy HH:m:ss").format(new Date());
+                String timeStamp = new SimpleDateFormat("yyyy/MM/dd HH:m:ss").format(new Date());
                 try (Connection connection = DriverManager.getConnection(connectionUrl);) {
                     for (OSProcess p : procs) {
                         PreparedStatement stmt = connection.prepareStatement("EXEC insertProcesso ?, ?, ?, ?, ?, ?, ?;");
