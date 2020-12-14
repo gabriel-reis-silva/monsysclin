@@ -7,6 +7,7 @@ package com.mycompany.monsysclin.Controller;
 
 import com.mycompany.monsysclin.Model.Selects;
 import com.mycompany.monsysclin.View.Login;
+import java.io.IOException;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
@@ -14,6 +15,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -32,6 +35,7 @@ public class Inserts {
     Machine machine = new Machine();
     Processo processos = new Processo();
     String connectionUrl = conexao.getStringUrl();
+    Log logs = new Log();
 
     public void insereMaquina() {
         if (!maquina.checaMaquina()) {
@@ -55,14 +59,14 @@ public class Inserts {
 
     public void insereUsuarioMaquina(Integer idUsuario) {
         if (!maquina.checaUsuarioMaquina(idUsuario)) {
-            System.out.println("Da pra associar " +idUsuario);
+            System.out.println("Da pra associar " + idUsuario);
 
             try (Connection connection = DriverManager.getConnection(connectionUrl)) {
                 PreparedStatement stmt = connection.prepareStatement("INSERT INTO usuarioMaquina "
                         + "(fkusuario, fkmaquina) values (?, ?);");
                 stmt.setInt(1, idUsuario);
                 stmt.setInt(2, maquina.getIdMaquina());
-                stmt.executeUpdate();   
+                stmt.executeUpdate();
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "Erro no insert da usuarioMaquina" + e);
             }
@@ -90,10 +94,18 @@ public class Inserts {
                     stmt.setString(6, disco.usodisco());
                     stmt.setString(7, timeStamp);
                     stmt.executeUpdate();
+                    logs.validarLog("Leitura Registrada! Dados da leitura: \n"
+                            + "Maquina: " + machine.numeroSerie() + " Uso de CPU: " + cpu.toString() + " Uso de Memoria: " + memoria.getUso()
+                            + " Bytes Recebidos: " + adaptador0.bytesRecebidos() + " Bytes Enviados: " + adaptador0.bytesEnviados()
+                            + " Uso de disco: " + disco.usodisco() + " Horário: " + timeStamp,
+                            "Leituras");
                 } catch (Exception e) {
-                    JOptionPane.showMessageDialog(null, e);
+                    try {
+                        logs.validarLog("Leitura de dados deu errado! Erro: " + e, "Leituras");
+                    } catch (IOException ex) {
+                        Logger.getLogger(Inserts.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                 }
-
             }
         }, 5000, 5000);
 

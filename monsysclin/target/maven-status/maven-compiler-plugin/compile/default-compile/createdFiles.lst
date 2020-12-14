@@ -13,6 +13,7 @@ com\mycompany\monsysclin\Controller\Memoria.class
 com\mycompany\monsysclin\View\Leituras$3.class
 com\mycompany\monsysclin\View\Maquinas$1.class
 com\mycompany\monsysclin\Model\Usuario.class
+com\mycompany\monsysclin\Controller\Log.class
 com\mycompany\monsysclin\Controller\Processo.class
 com\mycompany\monsysclin\View\Maquinas.class
 com\mycompany\monsysclin\Controller\Cpu.class

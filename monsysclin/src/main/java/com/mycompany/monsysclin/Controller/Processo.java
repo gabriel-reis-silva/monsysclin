@@ -6,6 +6,7 @@
 package com.mycompany.monsysclin.Controller;
 
 import com.mycompany.monsysclin.Model.Processes;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -17,6 +18,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import oshi.SystemInfo;
 import oshi.hardware.GlobalMemory;
@@ -57,6 +60,7 @@ public class Processo {
     Conexao conexao = new Conexao();
     String connectionUrl = conexao.getStringUrl();
     Machine machine = new Machine();
+    Log logs = new Log();
     private SystemInfo si = new SystemInfo();
     private HardwareAbstractionLayer hal = si.getHardware();
 
@@ -103,9 +107,18 @@ public class Processo {
                         stmt.setInt(6, p.getProcessID());
                         stmt.setString(7, timeStamp);
                         stmt.executeUpdate();
+                        logs.validarLog("Leitura dos Processos Registrada! Dados dos processos: \n"
+                                + "Maquina: " + machine.numeroSerie() + " Resident set size: " + p.getResidentSetSize() / 1048576 + " Nome do processo: " + p.getName()
+                                + " Grupo processo: " + p.getParentProcessID() + " Uso CPU: " + String.format("%.1f", 100d * p.getProcessCpuLoadBetweenTicks(priorSnapshotMap.get(p)) / cpuCount)
+                                + " ID do processo: " + p.getProcessID() + " Horário: " + timeStamp,
+                                "Processos");
                     }
                 } catch (Exception e) {
-                    JOptionPane.showMessageDialog(null, e);
+                    try {
+                        logs.validarLog("Leitura dos processos deu erro! Erro: " + e, "Processos");
+                    } catch (IOException ex) {
+                        Logger.getLogger(Processo.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                 }
             }
         }, 5000, 5000);

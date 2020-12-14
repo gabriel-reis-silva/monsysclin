@@ -260,15 +260,15 @@ public class Leituras extends javax.swing.JFrame {
 
         jLabel1.setText("Uso do Disco:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(60, 180, 140, 16);
+        jLabel1.setBounds(60, 180, 170, 16);
 
         jLabel2.setText("Uso de CPU:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(60, 40, 140, 16);
+        jLabel2.setBounds(60, 40, 170, 16);
 
         jLabel3.setText("Uso de Memória:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(60, 110, 140, 16);
+        jLabel3.setBounds(60, 110, 170, 16);
 
         atualizaDados.setText("Atualizar");
         atualizaDados.addActionListener(new java.awt.event.ActionListener() {

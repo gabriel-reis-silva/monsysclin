@@ -7,13 +7,17 @@ package com.mycompany.monsysclin.View;
 
 import com.mycompany.monsysclin.Controller.Conexao;
 import com.mycompany.monsysclin.Controller.Inserts;
+import com.mycompany.monsysclin.Controller.Log;
 import com.mycompany.monsysclin.Model.Selects;
 import com.mycompany.monsysclin.Model.Usuario;
 import java.awt.Image;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
@@ -32,6 +36,7 @@ public class Login extends javax.swing.JFrame {
 
     Selects selects = new Selects();
     Conexao conexao = new Conexao();
+    Log logs = new Log();
 
     /**
      * Creates new form Login
@@ -61,13 +66,19 @@ public class Login extends javax.swing.JFrame {
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Credenciais incorretas", "Erro", JOptionPane.ERROR_MESSAGE);
+            try {
+                logs.validarLog("Login errado", "Login");
+            } catch (IOException ex) {
+                Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         return idUsuario;
     }
 
-    public void executaValida(Integer idUsuario) {
+    public void executaValida(Integer idUsuario) throws IOException {
         Inserts inserts = new Inserts();
         if (userValido1.equals(emailUser) && senhaValida.equals(senhaUser)) {
+            logs.validarLog("O usuário de ID:" + idUsuario + " entrou no sistema", "Login");
             JOptionPane.showMessageDialog(null, "Credenciais corretas");
             inserts.insereMaquina();
             inserts.insereUsuarioMaquina(idUsuario);
