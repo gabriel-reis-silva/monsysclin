@@ -24,8 +24,9 @@ import java.util.List;
 public class Log {
 
     public void validarLog(String texto, String tipoLog) throws IOException {
-        File arquivo = new File("Log" + tipoLog + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)) + ".txt");
         Date data = new Date();
+        File arquivo = new File("Log/Log_" + tipoLog + data.getDay() + data.getMonth() + data.getYear() + ".txt");
+
         if (!arquivo.exists()) {
             arquivo.createNewFile();
         }
@@ -34,7 +35,8 @@ public class Log {
         //lista.add("Fazendo um log simples");
         lista.add(LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)) + " " + data.getHours() + ":" + data.getMinutes() + ": " + texto);
 
-        Files.write(Paths.get(arquivo.getPath()), lista, StandardOpenOption.APPEND);
+        //Files.write(Paths.get(arquivo.getPath()), lista, StandardOpenOption.APPEND);
+        System.out.println(Paths.get(arquivo.getPath()));
         System.out.println(Files.write(Paths.get(arquivo.getPath()), lista, StandardOpenOption.APPEND));
     }
 }
