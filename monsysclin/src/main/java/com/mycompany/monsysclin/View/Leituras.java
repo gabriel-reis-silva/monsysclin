@@ -49,6 +49,7 @@ public class Leituras extends javax.swing.JFrame {
     Disco disco = new Disco();
     DefaultPieDataset dataset = new DefaultPieDataset();
     Processo pro = new Processo();
+    Machine machine = new Machine();
     Slack slack = new Slack();
 
     public Leituras() {
@@ -104,7 +105,7 @@ public class Leituras extends javax.swing.JFrame {
 
                 if (pbarCpu.getValue() >= 70) {
                     JSONObject message = new JSONObject();
-                    message.put("text", "Consumo elevado de CPU: " + pbarCpu.getValue() + ":warning:");
+                    message.put("text", "Consumo elevado de CPU: " + pbarCpu.getValue() + ":warning: de Serial Number: ");
                     try {
                         slack.sendMessage(message);
                     } catch (Exception ex) {

@@ -1,0 +1,2 @@
+14/12/2020 1:6: Leitura Registrada! Dados da leitura: 
+Maquina: PE03H6GR Uso de CPU: 27,03 Uso de Memoria: 6.678310912 Bytes Recebidos: 0 Bytes Enviados: 0 Uso de disco: 66,61 Horário: 2020/12/14 01:6:47
