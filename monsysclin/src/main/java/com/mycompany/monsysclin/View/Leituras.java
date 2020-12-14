@@ -22,6 +22,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -31,6 +33,7 @@ import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PiePlot3D;
 import org.jfree.chart.util.Rotation;
 import org.jfree.data.general.DefaultPieDataset;
+import org.json.JSONObject;
 import oshi.SystemInfo;
 import oshi.software.os.OSProcess;
 import oshi.software.os.OperatingSystem;
@@ -46,6 +49,7 @@ public class Leituras extends javax.swing.JFrame {
     Disco disco = new Disco();
     DefaultPieDataset dataset = new DefaultPieDataset();
     Processo pro = new Processo();
+    Slack slack = new Slack();
 
     public Leituras() {
         initComponents();
@@ -56,6 +60,7 @@ public class Leituras extends javax.swing.JFrame {
         txtArea.setText(cpu.cpuInfo().toString());
         atualizaBarras();
         iniciaGrafico();
+        atualizaSlack();
     }
 
     public ArrayList<Processes> processesList() {
@@ -89,6 +94,69 @@ public class Leituras extends javax.swing.JFrame {
         }
 
         return processList;
+    }
+
+    public void atualizaSlack() {
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+
+                if (pbarCpu.getValue() >= 70) {
+                    JSONObject message = new JSONObject();
+                    message.put("text", "Consumo elevado de CPU: " + pbarCpu.getValue() + ":warning:");
+                    try {
+                        slack.sendMessage(message);
+                    } catch (Exception ex) {
+                        Logger.getLogger(Leituras.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                } else if (pbarCpu.getValue() >= 90) {
+                    JSONObject message = new JSONObject();
+                    message.put("text", "Consumo muito elevado de CPU: " + pbarCpu.getValue() + ":red_circle:");
+                    try {
+                        slack.sendMessage(message);
+                    } catch (Exception ex) {
+                        Logger.getLogger(Leituras.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+
+                if (pbarMemoria.getValue() >= 70) {
+                    JSONObject message = new JSONObject();
+                    message.put("text", "Consumo elevado de RAM: " + pbarMemoria.getValue() + "% :warning:");
+                    try {
+                        slack.sendMessage(message);
+                    } catch (Exception ex) {
+                        Logger.getLogger(Leituras.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                } else if (pbarMemoria.getValue() >= 90) {
+                    JSONObject message = new JSONObject();
+                    message.put("text", "Consumo muito elevado de RAM: " + pbarMemoria.getValue() + "% :red_circle:");
+                    try {
+                        slack.sendMessage(message);
+                    } catch (Exception ex) {
+                        Logger.getLogger(Leituras.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+
+                if (pbarDisco.getValue() >= 70) {
+                    JSONObject message = new JSONObject();
+                    message.put("text", "Consumo elevado de Disco: " + pbarDisco.getValue() + "% :warning:");
+                    try {
+                        slack.sendMessage(message);
+                    } catch (Exception ex) {
+                        Logger.getLogger(Leituras.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                } else if (pbarDisco.getValue() >= 90) {
+                    JSONObject message = new JSONObject();
+                    message.put("text", "Consumo muito elevado de Disco: " + pbarDisco.getValue() + "% :red_circle:");
+                    try {
+                        slack.sendMessage(message);
+                    } catch (Exception ex) {
+                        Logger.getLogger(Leituras.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+            }
+        }, 60000, 60000);
     }
 
     public void atualizaBarras() {

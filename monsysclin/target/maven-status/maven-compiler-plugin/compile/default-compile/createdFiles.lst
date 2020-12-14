@@ -1,3 +1,4 @@
+com\mycompany\monsysclin\Controller\Slack.class
 com\mycompany\monsysclin\View\Login$2.class
 com\mycompany\monsysclin\Model\Selects.class
 com\mycompany\monsysclin\View\Leituras$5.class
@@ -18,6 +19,7 @@ com\mycompany\monsysclin\Controller\Processo.class
 com\mycompany\monsysclin\View\Maquinas.class
 com\mycompany\monsysclin\Controller\Cpu.class
 com\mycompany\monsysclin\Model\Processes.class
+com\mycompany\monsysclin\View\Leituras$6.class
 com\mycompany\monsysclin\Controller\Network.class
 com\mycompany\monsysclin\Model\Maquinas.class
 com\mycompany\monsysclin\View\Login.class
