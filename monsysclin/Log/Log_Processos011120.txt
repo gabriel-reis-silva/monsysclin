@@ -1,2 +1,892 @@
 13/12/2020 23:28: Leitura dos processos deu erro! Erro: com.microsoft.sqlserver.jdbc.SQLServerException: Falha na conexão TCP/IP com o host monsysclin.database.windows.net, porta 1433. Erro: "monsysclin.database.windows.net. Verifique as propriedades da conexão. Verifique se uma instância do SQL Server está sendo executada no host e se está aceitando conexões TCP/IP na porta. Verifique se as conexões TCP na porta não foram bloqueadas por um firewall.".
 13/12/2020 23:28: Leitura dos processos deu erro! Erro: com.microsoft.sqlserver.jdbc.SQLServerException: Falha na conexão TCP/IP com o host monsysclin.database.windows.net, porta 1433. Erro: "monsysclin.database.windows.net. Verifique as propriedades da conexão. Verifique se uma instância do SQL Server está sendo executada no host e se está aceitando conexões TCP/IP na porta. Verifique se as conexões TCP na porta não foram bloqueadas por um firewall.".
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: Idle Grupo processo: 0 Uso CPU: 73,0 ID do processo: 0 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: Idle Grupo processo: 0 Uso CPU: 73,0 ID do processo: 0 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 164 Nome do processo: java Grupo processo: 1584 Uso CPU: 38,8 ID do processo: 4444 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 103 Nome do processo: java Grupo processo: 1584 Uso CPU: 34,0 ID do processo: 4444 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 85 Nome do processo: java Grupo processo: 5892 Uso CPU: 26,1 ID do processo: 1584 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 85 Nome do processo: java Grupo processo: 5892 Uso CPU: 24,0 ID do processo: 1584 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 149 Nome do processo: opera Grupo processo: 3268 Uso CPU: 7,5 ID do processo: 3652 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: WmiPrvSE Grupo processo: 720 Uso CPU: 8,2 ID do processo: 1820 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: WmiPrvSE Grupo processo: 720 Uso CPU: 6,0 ID do processo: 1820 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 149 Nome do processo: opera Grupo processo: 3268 Uso CPU: 7,5 ID do processo: 3652 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1261 Nome do processo: netbeans64 Grupo processo: 6832 Uso CPU: 4,1 ID do processo: 12220 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1261 Nome do processo: netbeans64 Grupo processo: 6832 Uso CPU: 4,1 ID do processo: 12220 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: WmiPrvSE Grupo processo: 720 Uso CPU: 2,9 ID do processo: 6504 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 57 Nome do processo: opera Grupo processo: 11208 Uso CPU: 2,0 ID do processo: 3268 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 57 Nome do processo: opera Grupo processo: 11208 Uso CPU: 2,0 ID do processo: 3268 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: WmiPrvSE Grupo processo: 720 Uso CPU: 1,8 ID do processo: 6504 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 160 Nome do processo: opera Grupo processo: 3268 Uso CPU: 1,7 ID do processo: 4056 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 160 Nome do processo: opera Grupo processo: 3268 Uso CPU: 1,7 ID do processo: 4056 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: System Grupo processo: 0 Uso CPU: 1,4 ID do processo: 4 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: System Grupo processo: 0 Uso CPU: 1,4 ID do processo: 4 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 15 Nome do processo: dwm Grupo processo: 944 Uso CPU: 0,8 ID do processo: 1308 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 15 Nome do processo: dwm Grupo processo: 944 Uso CPU: 0,8 ID do processo: 1308 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 85 Nome do processo: MsMpEng Grupo processo: 960 Uso CPU: 0,8 ID do processo: 5228 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 85 Nome do processo: MsMpEng Grupo processo: 960 Uso CPU: 0,8 ID do processo: 5228 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: audiodg Grupo processo: 3480 Uso CPU: 0,6 ID do processo: 3884 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: audiodg Grupo processo: 3480 Uso CPU: 0,6 ID do processo: 3884 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 101 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,5 ID do processo: 9984 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 101 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,5 ID do processo: 9984 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 27 Nome do processo: explorer Grupo processo: 6692 Uso CPU: 0,4 ID do processo: 6832 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: SearchProtocolHost Grupo processo: 5284 Uso CPU: 0,4 ID do processo: 9156 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: SearchProtocolHost Grupo processo: 5284 Uso CPU: 0,4 ID do processo: 9156 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 28 Nome do processo: explorer Grupo processo: 6692 Uso CPU: 0,4 ID do processo: 6832 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 32 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,4 ID do processo: 7556 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: cmd Grupo processo: 12220 Uso CPU: 0,4 ID do processo: 5892 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,3 ID do processo: 2980 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 32 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,4 ID do processo: 7556 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: cmd Grupo processo: 12220 Uso CPU: 0,3 ID do processo: 5892 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,3 ID do processo: 2980 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 110 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,3 ID do processo: 7092 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 110 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,3 ID do processo: 7092 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 18 Nome do processo: Taskmgr Grupo processo: 6832 Uso CPU: 0,2 ID do processo: 7152 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 18 Nome do processo: Taskmgr Grupo processo: 6832 Uso CPU: 0,2 ID do processo: 7152 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 38 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,2 ID do processo: 9948 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 38 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,2 ID do processo: 9948 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 19 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,2 ID do processo: 6408 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 19 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,2 ID do processo: 6408 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 45 Nome do processo: chrome Grupo processo: 6832 Uso CPU: 0,2 ID do processo: 6724 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 45 Nome do processo: chrome Grupo processo: 6832 Uso CPU: 0,2 ID do processo: 6724 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: SearchFilterHost Grupo processo: 5284 Uso CPU: 0,1 ID do processo: 3052 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: SearchFilterHost Grupo processo: 5284 Uso CPU: 0,1 ID do processo: 3052 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 3444 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: conhost Grupo processo: 4444 Uso CPU: 0,1 ID do processo: 11068 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: ctfmon Grupo processo: 4036 Uso CPU: 0,1 ID do processo: 4072 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 3444 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: conhost Grupo processo: 4444 Uso CPU: 0,1 ID do processo: 11068 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: ctfmon Grupo processo: 4036 Uso CPU: 0,1 ID do processo: 4072 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 2708 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 2708 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 32 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,1 ID do processo: 11404 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 32 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,1 ID do processo: 11404 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: csrss Grupo processo: 840 Uso CPU: 0,1 ID do processo: 856 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: csrss Grupo processo: 840 Uso CPU: 0,1 ID do processo: 856 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 249 Nome do processo: Memory Compression Grupo processo: 4 Uso CPU: 0,1 ID do processo: 3104 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 249 Nome do processo: Memory Compression Grupo processo: 4 Uso CPU: 0,1 ID do processo: 3104 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: SearchIndexer Grupo processo: 960 Uso CPU: 0,1 ID do processo: 5284 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: SearchIndexer Grupo processo: 960 Uso CPU: 0,1 ID do processo: 5284 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 7084 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 7084 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 32 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,1 ID do processo: 10512 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 32 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,1 ID do processo: 10512 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: conhost Grupo processo: 5892 Uso CPU: 0,1 ID do processo: 268 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 3044 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 3044 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 1192 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 1192 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 7 Nome do processo: OneDrive Grupo processo: 6832 Uso CPU: 0,1 ID do processo: 10632 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 7 Nome do processo: OneDrive Grupo processo: 6832 Uso CPU: 0,1 ID do processo: 10632 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 8 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 720 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 8 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 720 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: conhost Grupo processo: 5892 Uso CPU: 0,1 ID do processo: 268 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: Rainmeter Grupo processo: 6832 Uso CPU: 0,1 ID do processo: 2612 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: Rainmeter Grupo processo: 6832 Uso CPU: 0,1 ID do processo: 2612 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 3480 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 3480 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: SettingSyncHost Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8224 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: SettingSyncHost Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8224 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: ShellExperienceHost Grupo processo: 720 Uso CPU: 0,0 ID do processo: 4152 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: ShellExperienceHost Grupo processo: 720 Uso CPU: 0,0 ID do processo: 4152 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: SearchUI Grupo processo: 720 Uso CPU: 0,0 ID do processo: 2144 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: SearchUI Grupo processo: 720 Uso CPU: 0,0 ID do processo: 2144 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9644 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9644 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2024 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2024 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: LenovoVantageService Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4528 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: LenovoVantageService Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4528 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 27 Nome do processo: WmiPrvSE Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9476 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 27 Nome do processo: WmiPrvSE Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9476 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 20 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4936 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 20 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4936 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: services Grupo processo: 848 Uso CPU: 0,0 ID do processo: 960 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: services Grupo processo: 848 Uso CPU: 0,0 ID do processo: 960 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 11 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 11544 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 11 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 11544 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 10 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,0 ID do processo: 11476 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 10 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,0 ID do processo: 11476 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: sihost Grupo processo: 2232 Uso CPU: 0,0 ID do processo: 3436 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: sihost Grupo processo: 2232 Uso CPU: 0,0 ID do processo: 3436 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: smartscreen Grupo processo: 720 Uso CPU: 0,0 ID do processo: 5544 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: smartscreen Grupo processo: 720 Uso CPU: 0,0 ID do processo: 5544 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 10 Nome do processo: Lenovo.Modern.ImController Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5040 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 10 Nome do processo: Lenovo.Modern.ImController Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5040 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 9976 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 9976 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4884 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4884 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 3600 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 3600 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2460 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2460 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8416 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8416 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: lsass Grupo processo: 848 Uso CPU: 0,0 ID do processo: 1020 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: lsass Grupo processo: 848 Uso CPU: 0,0 ID do processo: 1020 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: HxTsr Grupo processo: 720 Uso CPU: 0,0 ID do processo: 11020 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: HxTsr Grupo processo: 720 Uso CPU: 0,0 ID do processo: 11020 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5108 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5108 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: StartMenuExperienceHost Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8016 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: StartMenuExperienceHost Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8016 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 8 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 6728 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 8 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 6728 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 26 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,0 ID do processo: 6596 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 26 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,0 ID do processo: 6596 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: Lenovo.Modern.ImController.PluginHost.SettingsApp Grupo processo: 5040 Uso CPU: 0,0 ID do processo: 10052 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: Lenovo.Modern.ImController.PluginHost.SettingsApp Grupo processo: 5040 Uso CPU: 0,0 ID do processo: 10052 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: mintty Grupo processo: 7876 Uso CPU: 0,0 ID do processo: 7264 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: mintty Grupo processo: 7876 Uso CPU: 0,0 ID do processo: 7264 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 7 Nome do processo: Lenovo.Modern.ImController.PluginHost.CompanionApp Grupo processo: 5040 Uso CPU: 0,0 ID do processo: 3248 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 7 Nome do processo: Lenovo.Modern.ImController.PluginHost.CompanionApp Grupo processo: 5040 Uso CPU: 0,0 ID do processo: 3248 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: bash Grupo processo: 868 Uso CPU: 0,0 ID do processo: 9248 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: bash Grupo processo: 868 Uso CPU: 0,0 ID do processo: 9248 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: mysqld Grupo processo: 5252 Uso CPU: 0,0 ID do processo: 7392 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: mysqld Grupo processo: 5252 Uso CPU: 0,0 ID do processo: 7392 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 7896 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 7896 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8188 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8188 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: Lenovo.Modern.ImController.PluginHost.Device Grupo processo: 5040 Uso CPU: 0,0 ID do processo: 4288 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: Lenovo.Modern.ImController.PluginHost.Device Grupo processo: 5040 Uso CPU: 0,0 ID do processo: 4288 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 9336 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 9336 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: IGCCTray Grupo processo: 6832 Uso CPU: 0,0 ID do processo: 8248 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: IGCCTray Grupo processo: 6832 Uso CPU: 0,0 ID do processo: 8248 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 10 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4472 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 10 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4472 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 3564 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 3564 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: OfficeClickToRun Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4924 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: OfficeClickToRun Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4924 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2916 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2916 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: igfxEM Grupo processo: 2240 Uso CPU: 0,0 ID do processo: 4340 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: igfxEM Grupo processo: 2240 Uso CPU: 0,0 ID do processo: 4340 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 1788 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 1788 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: csrss Grupo processo: 748 Uso CPU: 0,0 ID do processo: 764 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: csrss Grupo processo: 748 Uso CPU: 0,0 ID do processo: 764 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: WindowsInternal.ComposableShell.Experiences.TextInput.InputApp Grupo processo: 720 Uso CPU: 0,0 ID do processo: 7800 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: WindowsInternal.ComposableShell.Experiences.TextInput.InputApp Grupo processo: 720 Uso CPU: 0,0 ID do processo: 7800 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 10452 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 10452 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2176 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2176 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5336 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5336 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 3748 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 3748 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: HxOutlook Grupo processo: 720 Uso CPU: 0,0 ID do processo: 5240 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: HxOutlook Grupo processo: 720 Uso CPU: 0,0 ID do processo: 5240 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: DolbyDAX2API Grupo processo: 960 Uso CPU: 0,0 ID do processo: 10080 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: DolbyDAX2API Grupo processo: 960 Uso CPU: 0,0 ID do processo: 10080 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 6848 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 6848 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9312 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9312 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: com.docker.service Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5848 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: com.docker.service Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5848 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 11 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,0 ID do processo: 12052 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 11 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,0 ID do processo: 12052 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 840 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 840 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 5024 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 5024 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: taskhostw Grupo processo: 1788 Uso CPU: 0,0 ID do processo: 3736 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: taskhostw Grupo processo: 1788 Uso CPU: 0,0 ID do processo: 3736 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2924 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2924 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: mysqld Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5252 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: mysqld Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5252 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 1244 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 1244 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: GameBar Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9392 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: GameBar Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9392 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2660 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2660 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2232 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2232 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 11796 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 11796 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 7 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 1176 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 7 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 1176 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: LockApp Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9000 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: LockApp Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9000 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: Registry Grupo processo: 4 Uso CPU: 0,0 ID do processo: 104 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: Registry Grupo processo: 4 Uso CPU: 0,0 ID do processo: 104 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: LSB Grupo processo: 10224 Uso CPU: 0,0 ID do processo: 5096 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: LSB Grupo processo: 10224 Uso CPU: 0,0 ID do processo: 5096 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: AppleMobileDeviceService Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4908 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: AppleMobileDeviceService Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4908 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: NisSrv Grupo processo: 960 Uso CPU: 0,0 ID do processo: 8428 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: NisSrv Grupo processo: 960 Uso CPU: 0,0 ID do processo: 8428 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 7348 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 7348 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2656 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2656 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: fontdrvhost Grupo processo: 944 Uso CPU: 0,0 ID do processo: 1040 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: fontdrvhost Grupo processo: 944 Uso CPU: 0,0 ID do processo: 1040 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 6976 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 6976 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: ETDCtrl Grupo processo: 4916 Uso CPU: 0,0 ID do processo: 4100 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 3004 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 3004 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: ETDCtrl Grupo processo: 4916 Uso CPU: 0,0 ID do processo: 4100 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 6420 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 6420 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4892 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4892 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: GameBarFTServer Grupo processo: 720 Uso CPU: 0,0 ID do processo: 3472 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: GameBarFTServer Grupo processo: 720 Uso CPU: 0,0 ID do processo: 3472 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 10040 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 10040 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: RAVCpl64 Grupo processo: 10472 Uso CPU: 0,0 ID do processo: 9524 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: RAVCpl64 Grupo processo: 10472 Uso CPU: 0,0 ID do processo: 9524 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: spoolsv Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4392 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: spoolsv Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4392 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: SgrmBroker Grupo processo: 960 Uso CPU: 0,0 ID do processo: 10544 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: SgrmBroker Grupo processo: 960 Uso CPU: 0,0 ID do processo: 10544 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 7404 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 7404 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9436 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9436 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 3208 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 3208 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2972 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2972 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,0 ID do processo: 2216 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,0 ID do processo: 2216 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: SecurityHealthService Grupo processo: 960 Uso CPU: 0,0 ID do processo: 1460 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: SecurityHealthService Grupo processo: 960 Uso CPU: 0,0 ID do processo: 1460 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2184 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2184 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5208 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5208 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 6088 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 6088 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: OneApp.IGCC.WinService Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4976 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: OneApp.IGCC.WinService Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4976 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: FileCoAuth Grupo processo: 720 Uso CPU: 0,0 ID do processo: 6556 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: FileCoAuth Grupo processo: 720 Uso CPU: 0,0 ID do processo: 6556 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 10972 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 10972 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: RAVBg64 Grupo processo: 1788 Uso CPU: 0,0 ID do processo: 10460 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: RAVBg64 Grupo processo: 1788 Uso CPU: 0,0 ID do processo: 10460 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: IGCC Grupo processo: 720 Uso CPU: 0,0 ID do processo: 11100 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: IGCC Grupo processo: 720 Uso CPU: 0,0 ID do processo: 11100 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 6896 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 6896 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5136 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5136 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4280 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4280 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4104 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4104 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: smss Grupo processo: 4 Uso CPU: 0,0 ID do processo: 648 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: smss Grupo processo: 4 Uso CPU: 0,0 ID do processo: 648 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: winlogon Grupo processo: 840 Uso CPU: 0,0 ID do processo: 944 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: winlogon Grupo processo: 840 Uso CPU: 0,0 ID do processo: 944 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 6796 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 6796 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4332 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4332 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 1812 Horário: 2020/12/13 23:50:28
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 1812 Horário: 2020/12/13 23:50:27
+13/12/2020 23:50: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: utility Grupo processo: 6832 Uso CPU: 0,0 ID do processo: 10356 Horário: 2020/12/13 23:50:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: Idle Grupo processo: 0 Uso CPU: 73,0 ID do processo: 0 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: Idle Grupo processo: 0 Uso CPU: 73,0 ID do processo: 0 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 94 Nome do processo: java Grupo processo: 4052 Uso CPU: 37,0 ID do processo: 6320 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 119 Nome do processo: java Grupo processo: 4052 Uso CPU: 42,6 ID do processo: 6320 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 84 Nome do processo: java Grupo processo: 6604 Uso CPU: 28,6 ID do processo: 4052 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 84 Nome do processo: java Grupo processo: 6604 Uso CPU: 25,9 ID do processo: 4052 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 141 Nome do processo: opera Grupo processo: 3268 Uso CPU: 7,4 ID do processo: 3652 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 135 Nome do processo: opera Grupo processo: 3268 Uso CPU: 7,4 ID do processo: 3652 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1263 Nome do processo: netbeans64 Grupo processo: 6832 Uso CPU: 4,1 ID do processo: 12220 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1263 Nome do processo: netbeans64 Grupo processo: 6832 Uso CPU: 4,1 ID do processo: 12220 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 57 Nome do processo: opera Grupo processo: 11208 Uso CPU: 2,0 ID do processo: 3268 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 57 Nome do processo: opera Grupo processo: 11208 Uso CPU: 2,0 ID do processo: 3268 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 155 Nome do processo: opera Grupo processo: 3268 Uso CPU: 1,7 ID do processo: 4056 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 155 Nome do processo: opera Grupo processo: 3268 Uso CPU: 1,7 ID do processo: 4056 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: System Grupo processo: 0 Uso CPU: 1,4 ID do processo: 4 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: System Grupo processo: 0 Uso CPU: 1,4 ID do processo: 4 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 15 Nome do processo: dwm Grupo processo: 944 Uso CPU: 0,8 ID do processo: 1308 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 15 Nome do processo: dwm Grupo processo: 944 Uso CPU: 0,8 ID do processo: 1308 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 85 Nome do processo: MsMpEng Grupo processo: 960 Uso CPU: 0,8 ID do processo: 5228 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 85 Nome do processo: MsMpEng Grupo processo: 960 Uso CPU: 0,8 ID do processo: 5228 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: audiodg Grupo processo: 3480 Uso CPU: 0,6 ID do processo: 3884 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: audiodg Grupo processo: 3480 Uso CPU: 0,6 ID do processo: 3884 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 119 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,5 ID do processo: 9984 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 119 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,5 ID do processo: 9984 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 29 Nome do processo: explorer Grupo processo: 6692 Uso CPU: 0,4 ID do processo: 6832 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 29 Nome do processo: explorer Grupo processo: 6692 Uso CPU: 0,4 ID do processo: 6832 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: conhost Grupo processo: 6320 Uso CPU: 0,4 ID do processo: 10396 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 32 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,3 ID do processo: 7556 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 32 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,3 ID do processo: 7556 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,3 ID do processo: 2980 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,3 ID do processo: 2980 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: conhost Grupo processo: 6320 Uso CPU: 0,3 ID do processo: 10396 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 111 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,3 ID do processo: 7092 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 111 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,3 ID do processo: 7092 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: cmd Grupo processo: 12220 Uso CPU: 0,3 ID do processo: 6604 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: cmd Grupo processo: 12220 Uso CPU: 0,2 ID do processo: 6604 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 18 Nome do processo: Taskmgr Grupo processo: 6832 Uso CPU: 0,2 ID do processo: 7152 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 18 Nome do processo: Taskmgr Grupo processo: 6832 Uso CPU: 0,2 ID do processo: 7152 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: WmiPrvSE Grupo processo: 720 Uso CPU: 0,2 ID do processo: 1820 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: WmiPrvSE Grupo processo: 720 Uso CPU: 0,2 ID do processo: 1820 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: conhost Grupo processo: 6604 Uso CPU: 0,2 ID do processo: 1864 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 38 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,2 ID do processo: 9948 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 38 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,2 ID do processo: 9948 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 19 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,2 ID do processo: 6408 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 19 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,2 ID do processo: 6408 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: conhost Grupo processo: 6604 Uso CPU: 0,2 ID do processo: 1864 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 45 Nome do processo: chrome Grupo processo: 6832 Uso CPU: 0,2 ID do processo: 6724 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 45 Nome do processo: chrome Grupo processo: 6832 Uso CPU: 0,2 ID do processo: 6724 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 3444 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 3444 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: ctfmon Grupo processo: 4036 Uso CPU: 0,1 ID do processo: 4072 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: ctfmon Grupo processo: 4036 Uso CPU: 0,1 ID do processo: 4072 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 2708 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 2708 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 32 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,1 ID do processo: 11404 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 32 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,1 ID do processo: 11404 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: csrss Grupo processo: 840 Uso CPU: 0,1 ID do processo: 856 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: csrss Grupo processo: 840 Uso CPU: 0,1 ID do processo: 856 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 258 Nome do processo: Memory Compression Grupo processo: 4 Uso CPU: 0,1 ID do processo: 3104 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 258 Nome do processo: Memory Compression Grupo processo: 4 Uso CPU: 0,1 ID do processo: 3104 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: SearchIndexer Grupo processo: 960 Uso CPU: 0,1 ID do processo: 5284 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: SearchIndexer Grupo processo: 960 Uso CPU: 0,1 ID do processo: 5284 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: SearchProtocolHost Grupo processo: 5284 Uso CPU: 0,1 ID do processo: 9156 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: SearchProtocolHost Grupo processo: 5284 Uso CPU: 0,1 ID do processo: 9156 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 7084 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 7084 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 32 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,1 ID do processo: 10512 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 32 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,1 ID do processo: 10512 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 1192 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 1192 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 3044 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 3044 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 8 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 720 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 8 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 720 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 7 Nome do processo: OneDrive Grupo processo: 6832 Uso CPU: 0,1 ID do processo: 10632 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 7 Nome do processo: OneDrive Grupo processo: 6832 Uso CPU: 0,1 ID do processo: 10632 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: Rainmeter Grupo processo: 6832 Uso CPU: 0,1 ID do processo: 2612 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: Rainmeter Grupo processo: 6832 Uso CPU: 0,1 ID do processo: 2612 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 3480 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,1 ID do processo: 3480 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: SettingSyncHost Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8224 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: SettingSyncHost Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8224 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: WmiPrvSE Grupo processo: 720 Uso CPU: 0,0 ID do processo: 6504 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: WmiPrvSE Grupo processo: 720 Uso CPU: 0,0 ID do processo: 6504 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: ShellExperienceHost Grupo processo: 720 Uso CPU: 0,0 ID do processo: 4152 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: ShellExperienceHost Grupo processo: 720 Uso CPU: 0,0 ID do processo: 4152 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: SearchUI Grupo processo: 720 Uso CPU: 0,0 ID do processo: 2144 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: SearchUI Grupo processo: 720 Uso CPU: 0,0 ID do processo: 2144 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9644 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9644 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2024 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2024 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: SearchProtocolHost Grupo processo: 5284 Uso CPU: 0,0 ID do processo: 2076 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: LenovoVantageService Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4528 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: LenovoVantageService Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4528 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: SearchProtocolHost Grupo processo: 5284 Uso CPU: 0,0 ID do processo: 2076 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 27 Nome do processo: WmiPrvSE Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9476 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 27 Nome do processo: WmiPrvSE Grupo processo: 720 Uso CPU: 0,0 ID do processo: 9476 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 20 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4936 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 20 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4936 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: services Grupo processo: 848 Uso CPU: 0,0 ID do processo: 960 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: services Grupo processo: 848 Uso CPU: 0,0 ID do processo: 960 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 11 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 11544 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 11 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 11544 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: sihost Grupo processo: 2232 Uso CPU: 0,0 ID do processo: 3436 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: sihost Grupo processo: 2232 Uso CPU: 0,0 ID do processo: 3436 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 10 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,0 ID do processo: 11476 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 10 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,0 ID do processo: 11476 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 10 Nome do processo: Lenovo.Modern.ImController Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5040 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 10 Nome do processo: Lenovo.Modern.ImController Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5040 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: HxTsr Grupo processo: 720 Uso CPU: 0,0 ID do processo: 11020 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: HxTsr Grupo processo: 720 Uso CPU: 0,0 ID do processo: 11020 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 9976 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 3600 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 9976 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4884 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 3 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 3600 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2460 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 4884 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: lsass Grupo processo: 848 Uso CPU: 0,0 ID do processo: 1020 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 2460 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8416 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: lsass Grupo processo: 848 Uso CPU: 0,0 ID do processo: 1020 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5108 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8416 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: smartscreen Grupo processo: 720 Uso CPU: 0,0 ID do processo: 5544 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 5108 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: StartMenuExperienceHost Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8016 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: smartscreen Grupo processo: 720 Uso CPU: 0,0 ID do processo: 5544 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 8 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 6728 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: StartMenuExperienceHost Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8016 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 26 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,0 ID do processo: 6596 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 8 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 6728 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 7896 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 26 Nome do processo: chrome Grupo processo: 6724 Uso CPU: 0,0 ID do processo: 6596 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: Lenovo.Modern.ImController.PluginHost.SettingsApp Grupo processo: 5040 Uso CPU: 0,0 ID do processo: 10052 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 4 Nome do processo: svchost Grupo processo: 960 Uso CPU: 0,0 ID do processo: 7896 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: mintty Grupo processo: 7876 Uso CPU: 0,0 ID do processo: 7264 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: Lenovo.Modern.ImController.PluginHost.SettingsApp Grupo processo: 5040 Uso CPU: 0,0 ID do processo: 10052 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 7 Nome do processo: Lenovo.Modern.ImController.PluginHost.CompanionApp Grupo processo: 5040 Uso CPU: 0,0 ID do processo: 3248 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 2 Nome do processo: mintty Grupo processo: 7876 Uso CPU: 0,0 ID do processo: 7264 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: mysqld Grupo processo: 5252 Uso CPU: 0,0 ID do processo: 7392 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 7 Nome do processo: Lenovo.Modern.ImController.PluginHost.CompanionApp Grupo processo: 5040 Uso CPU: 0,0 ID do processo: 3248 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: bash Grupo processo: 868 Uso CPU: 0,0 ID do processo: 9248 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 6 Nome do processo: mysqld Grupo processo: 5252 Uso CPU: 0,0 ID do processo: 7392 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8188 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 1 Nome do processo: bash Grupo processo: 868 Uso CPU: 0,0 ID do processo: 9248 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 5 Nome do processo: Lenovo.Modern.ImController.PluginHost.Device Grupo processo: 5040 Uso CPU: 0,0 ID do processo: 4288 Horário: 2020/12/13 23:51:27
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 0 Nome do processo: RuntimeBroker Grupo processo: 720 Uso CPU: 0,0 ID do processo: 8188 Horário: 2020/12/13 23:51:28
+13/12/2020 23:51: Leitura dos Processos Registrada! Dados dos processos: 
+Maquina: PE03H6GR Resident set size: 9 Nome do processo: opera Grupo processo: 3268 Uso CPU: 0,0 ID do processo: 9336 Horário: 2020/12/13 23:51:27
